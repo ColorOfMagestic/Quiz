@@ -1,0 +1,52 @@
+// Variables
+
+// Colors
+    @gradient: linear-gradient(to bottom,rgb(253,132,89), rgb(254,60,90));
+    @gradient_disabled: linear-gradient(to bottom,rgb(254,160,172), rgb(254,191,172));
+    @accent_color: #FE3C5A;
+    @secondary_color: #9E9E9E;
+    @num_color: #6A2A85;
+    @text_color: #222222;
+    @black: #000000;
+// Fonts
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'),
+    url('../../fonts/Roboto.woff2') format('woff2'),
+    url('../../fonts/Roboto.woff')format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+    .bold {
+        font-weight: 700;
+    };
+    .medium {
+        font-weight: 500;
+    };
+
+//Font-sizes
+    @main_size_desktop: 18px;
+    @title_desktop: 30px;
+    @checkbox_desktop: 15px;
+    @btn_desktop: 15px;
+
+// Sizes
+@desktop:1400px;
+@laptop:960px;
+@tablet:640px;
+@mobile:320px;
+
+// Auxiliary styles
+
+.container {
+    width: 1100px;
+    height: 100px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+body{
+    font-family: 'Roboto';
+    height: 400px;
+    background: @gradient_disabled;
+}
