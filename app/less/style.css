@@ -51,3 +51,45 @@ textarea,
 select {
   font: inherit;
 }
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: local('Roboto'), url('../../fonts/Roboto.woff2') format('woff2'), url('../../fonts/Roboto.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway', sans-serif;
+  src: local('Raleway Regular'), url('../../fonts/Raleway-Regular.woff2') format('woff2'), url('../../fonts/Raleway-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+.bold {
+  font-weight: 700;
+}
+.medium {
+  font-weight: 500;
+}
+body {
+  font-family: 'Roboto';
+  font-size: 18px;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Raleway', sans-serif;
+}
+.container {
+  width: 1100px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.btn {
+  position: relative;
+  background: linear-gradient(to bottom, #fd8459, #fe3c5a);
+  font-family: 'Raleway', sans-serif;
+  color: #ffffff;
+  font-size: 24px;
+  border: none;
+  border-radius: 80px;
+}
