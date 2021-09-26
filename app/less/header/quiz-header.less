@@ -1,0 +1,58 @@
+@import "../services/support.less";
+
+.quiz-header {
+    .quiz-header-wrapper {
+        background-image: url(../img/bg_header_desk.jpg);
+        background-size: cover;
+        .top-block_wrapper {
+            display: flex;
+            align-items: center;
+            padding-top: 20px;
+            .top-block_info {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                margin-left: 20px;
+                .top-block_info-text {
+                    flex: 0 1 10%;
+                }
+                .top-block_info-links {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    flex-grow: 1;
+                    .info-links_link {
+                        text-decoration: none;
+                    }
+                    .link-phone {
+                        position: relative;
+                        color: @black;
+                        .bold();
+                        font-size: @title_desktop;
+                        &::after {
+                            position: absolute;
+                            top: 2px;
+                            left: -36px;
+                            display: block;
+                            content: url(../img/phone.svg);
+                        }
+                    }
+                    .link-text {
+                        position: relative;
+                        color: #3F4566;
+                        &::after {
+                            position: absolute;
+                            bottom: 3px;
+                            display: block;
+                            content: "";
+                            width: 100%;
+                            height: 1px;
+                            background-color: #3F4566;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
