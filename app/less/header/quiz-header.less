@@ -4,6 +4,7 @@
     .quiz-header-wrapper {
         background-image: url(../img/bg_header_desk.jpg);
         background-size: cover;
+        background-repeat: no-repeat;
         .top-block_wrapper {
             display: flex;
             align-items: center;
@@ -49,6 +50,136 @@
                             height: 1px;
                             background-color: #3F4566;
 
+                        }
+                    }
+                }
+            }
+        }
+        .header-content {
+            margin-top: 65px;
+            padding-left: 10px;
+            .quiz-header_title {
+                width: 53%;
+                font-family: 'Raleway_bold',sans-serif;
+                font-size: 48px;
+                color: #335D8E;
+                letter-spacing: -1px;
+            }
+            .benefit-wrapper {
+                display: flex;
+                margin-top: 33px;
+                .benefit-list {
+                    .benefit-list-item {
+                        position: relative;
+                        padding-left: 12px;
+                        line-height: 141%;
+                        &::before {
+                            position: absolute;
+                            top: 35%;
+                            left: 0px;
+                            display: block;
+                            content: "";
+                            width: 8px;
+                            height: 8px;
+                            background: @gradient;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+                .installment {
+                    margin-left: auto;
+                    margin-right: 43.5px;
+                    margin-top: 7px;
+                    padding: 0 99px 0 111px;
+                    color: @accent_color;
+                    text-align: center;
+                    border: 2px dashed @accent_color;
+                    border-radius: 12px;
+                    transform: rotate(-4deg);
+                    .installment-text {
+                        font-size: 20px;
+                    }
+                    .installment-text--top {
+                        padding-top: 11px;
+                    }
+                    .installment-text--bottom {
+                        padding-bottom: 11px;
+
+                    }
+                    .installment-text--lg {
+                        padding: 7px 0;
+                        font-size: 27px;
+                        .bold();
+                        text-transform: uppercase;
+
+                    }
+                }
+            }
+            .bottom-block_wrapper {
+                .bottom-block_title_wrapper {
+                    width: 100%;
+                    margin-top: 32px;
+                    .bottom-block_title {
+                        width: 65%;
+                        margin: 0 auto;
+                        font-family: 'Raleway_bold',sans-serif;
+                        font-size: @title_desktop;
+                        text-align: center;
+                    }
+                    .bottom-block_btn {
+                        position: relative;
+                        display: block;
+                        margin: 0 auto;
+                        margin-top: 31px;
+                        padding: 23px 48px;
+                        background: #63C44B;
+                        font-family: 'Raleway',sans-serif;
+                        font-size: @title_desktop;
+                        z-index: 5;
+                        cursor: pointer;
+                        &:hover {
+                            background: @accent_color;
+                        }
+                        &:active {
+                            transform: translate(2px,2px);
+                        }
+                    }
+                }
+                .bottom-block_gift {
+                    position: relative;
+                    width: 100%;
+                    border: 1px dashed @black;
+                    border-radius: 30px;
+                    transform: translate(0, -34px);
+                    z-index: 1;
+                    .gift-title {
+                        width: 53%;
+                        padding-top: 62px;
+                        margin: 0 auto;
+                        font-family: 'Raleway_bold',sans-serif;
+                        font-size: @title_desktop;
+                        text-align: center;
+                        .gift_span {
+                            color: @accent_color;
+                        }
+                    }
+                    .gifts {
+                        width: 53%;
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 0 auto;
+                        margin-top: 43px;
+                        .gifts_card {
+                            max-width: 102px;
+                            min-height: 119px;
+                            margin-bottom: 10px;
+                            text-align: center;
+                            .gifts_card-pic {
+                                margin: 0 auto;
+                            }
+                            .gifts_card_descr {
+                                padding-top: 10px;
+                            }
                         }
                     }
                 }
