@@ -1,0 +1,142 @@
+.quiz-main {
+    .five {
+        // position: absolute;
+        // top: 0;
+        .question_container {
+                .choice {
+                    position: relative;
+                    margin-top: 70px;
+                    .choice_block-pic {
+                        width: 30%;
+                        .choice-pic {
+                            transform: translate(-130px,0);
+                        }
+                    }
+                    .form_choice-block {
+                        width: 35%;
+                        .form_choice-block-title {
+                            margin-top: 146px;
+                            .raleway_bold();
+                            .choice-block-title_span {
+                                display: block;
+                                color: #6A2A85;
+                            }
+                        }
+                        .form_choice-block_text {
+                            width: 80%;
+                            margin-top: 12px;
+                            font-size: 12px;
+                        }
+                        .choice-block_form {
+                            width: 100%;
+                            margin-top: 35px;
+                            .choice-block_label {
+                                position: relative;
+                                width: 100%;
+                                height: 29px;
+                                display: flex;
+                                align-items: center;
+                                border-radius: 15px;
+                                &:not(:last-child) {
+                                    margin-bottom: 26px;
+                                }
+                                .choice-block_input {
+                                    position: absolute;
+                                    width: 1px;
+                                    height: 1px;
+                                    overflow: hidden;
+                                    clip: rect(0 0 0 0);
+                                }
+                                .choice-style {
+                                    position: absolute;
+                                    width: 29px;
+                                    height: 29px;
+                                    border: 2px solid @accent_color;
+                                    border-radius: 50%;
+                                }
+                                .choice-block_input:checked + .choice-style::before {
+                                    position: absolute;
+                                    content: "";
+                                    width: 17px;
+                                    height: 17px;
+                                    background: @accent_color;
+                                    top: 0;
+                                    left: 0;
+                                    right: 0;
+                                    bottom: 0;
+                                    margin: auto;
+                                    border-radius: 50%;
+                                }
+                                .choice-block_text {
+                                    padding-left: 62px;
+                                    font-size: @checkbox_desktop;
+                                }
+                            }
+                        }
+                    }
+                }
+                .choice-block_info-form {
+                    .choice-block_label-tel {
+                        display: flex;
+                        width: 100%;
+                        margin-top: 50px;
+                        margin-bottom: 14px;
+                        .choice-block_input-tel {
+                            width: 309px;
+                            height: 61px;
+                            margin: 0 auto;
+                            padding: 20px 77px;
+                            border: 1px solid @accent_color;
+                            border-radius: 80px;
+                            &:focus {
+                                outline: 1px solid @accent_color;
+                            }
+                        }
+                    }
+                }
+                .choice-block_btn {
+                    display: block;
+                    width: 311px;
+                    height: 78px;
+                    margin: 0 auto;
+                    margin-bottom: 70px;
+                }
+                .checkmark {
+                    margin: 0 auto;
+                }
+                .choice-block_info {
+                    width: 38%;
+                    margin: 0 auto;
+                    margin-top: 25px;
+                    font-size: 15px;
+                    font-weight: 500;
+                    text-align: center;
+                }
+            }
+        .footer-five {
+            border-radius: 0 0 15px 15px;
+            background-color: #BFDDFD;
+            .footer-five-container {
+                width: 100%;
+                min-height: 152px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .footer-five-text {
+                    position: relative;
+                    padding-left: 59px;
+                    font-family: 'Raleway',sans-serif;
+                    color: #4F4F4F;
+                    font-size: 27px;
+                    &::before {
+                        position: absolute;
+                        top: -60%;
+                        left: 0;
+                        content: url(../img/lock.png);
+                    }
+
+                }
+            }
+        }
+    }
+}
