@@ -42,6 +42,7 @@
 
 //Font-sizes
     @main_size_desktop: 18px;
+    @accent_quest_size_desktop: 15px;
     @title_desktop: 30px;
     @checkbox_desktop: 15px;
     @btn_desktop: 24px;
@@ -60,6 +61,12 @@ body{
 h1,h2,h3,h4 {
     font-family: 'Raleway',sans-serif;
 }
+.raleway_bold {
+    font-family: 'Raleway_bold',sans-serif;
+    font-weight: 700;
+    font-size: @title_desktop;
+}
+
 
 .container {
     width: 1100px;
@@ -75,4 +82,10 @@ h1,h2,h3,h4 {
     font-size: @btn_desktop;
     border: none;
     border-radius: 80px;
+    &:hover {
+        background: @accent_color;
+    }
+    &:active {
+        transform: translate(2px,2px);
+    }
 }
