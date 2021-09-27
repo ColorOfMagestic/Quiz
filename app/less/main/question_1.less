@@ -1,0 +1,223 @@
+@import "../services/support.less";
+
+.quiz-main {
+    .container{
+        .quiz-main_wrapper {
+            width: 100%;
+            margin-top: 60px;
+            .question {
+                border-radius: 20px;
+                box-shadow: 2px 0 15px 10px rgba(0, 0, 0, 0.1);
+                .question_container {
+                    width: 100%;
+                    padding: 28px 65px;
+                    .question_title {
+                        font-family: 'Raleway_bold',sans-serif;
+                        font-size: @title_desktop;
+                        text-align: center;
+                    }
+                    .question_title_text {
+                        text-align: center;
+                    }
+                    .steps {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        max-width: 553px;
+                        margin: 0 auto;
+                        margin-top: 48px;
+                        .step {
+                            width: 77px;
+                            height: 13px;
+                            border-radius: 45px;
+                            background-color: #FFE7C3;
+                            &:not(:last-child) {
+                                margin-right: 18px;
+                            }
+                        }
+                        .step--active {
+                            background-color: #63C44B;
+                        }
+                    }
+                    .accent_question {
+                        position: relative;
+                        margin-top: 45px;
+                        min-height: 169px;
+                        padding-top: 30px;
+                        padding-left: 35px;
+                        border: 2px dashed @black;
+                        border-radius: 30px;
+                            .temp_result-boss {
+                                position: absolute;
+                                top: 23%;
+                                right: 1%;
+                                display: flex;
+                                justify-content: end;
+                                width: 100%;
+                                &::before {
+                                    position: absolute;
+                                    top: -10px;
+                                    right: 50px;
+                                    content: url(../img/boss_desk.png);
+                                }
+                                .temp_result-boss_text {
+                                    width:10%;
+                                    color: @secondary_color;
+                                    font-size: 12px;
+                                    font-weight: 500;
+                                }
+                            }
+                        .accent_question_text {
+                            width: 65%;
+                            font-family: 'Raleway',sans-serif;
+                            font-weight: 500;
+                            font-size: @title_desktop;
+                        }
+                    }
+                    .choice {
+                        width: 100%;
+                        display: flex;
+                        .choice_form {
+                                width: 38%;
+                                margin-top: 85px;
+                            .choice_label {
+                                position: relative;
+                                width: 100%;
+                                height: 75px;
+                                display: flex;
+                                align-items: center;
+                                border: 1px solid @accent_color;
+                                border-radius: 15px;
+                                &:not(:last-child) {
+                                    margin-bottom: 20px;
+                                }
+                                .choice_input {
+                                    position: absolute;
+                                    width: 1px;
+                                    height: 1px;
+                                    overflow: hidden;
+                                    clip: rect(0 0 0 0);
+                                    padding-left: 20px;
+                                }
+                                .radio-style {
+                                    position: absolute;
+                                    left: 19px;
+                                    width: 29px;
+                                    height: 29px;
+                                    border: 2px solid @accent_color;
+                                    border-radius: 50%;
+
+                                }
+                                .choice_input:checked + .radio-style::before {
+                                    position: absolute;
+                                    content: "";
+                                    width: 17px;
+                                    height: 17px;
+                                    background: @accent_color;
+                                    top: 0;
+                                    left: 0;
+                                    right: 0;
+                                    bottom: 0;
+                                    margin: auto;
+                                    border-radius: 50%;
+
+                                }
+
+                                .choice_text {
+                                    padding-left: 62px;
+                                    font-size: @checkbox_desktop;
+                                }
+                            }
+                        }
+                        .temp_result-wrapper {
+                            width: 30%;
+                            position: relative;
+                            margin-top: 31px;
+                            margin-left: auto;
+                            border: 1px solid @accent_color;
+                            border-radius: 15px;
+                            .temp_result {
+                                .temp_result_container {
+                                    padding: 13px 17px;
+                                }
+                                .temp_result_title {
+                                    margin: 0;
+                                    font-size: 12px;
+                                    font-weight: 300;
+                                    color: @text_color;
+                                }
+                                .temp_result_calling {
+                                    margin-top: 18px;
+                                    .raleway_bold();
+                                    font-size: 21px;
+                                }
+                                .temp_result_calling_2 {
+                                    margin: 0;
+                                    margin-top: 25px;
+                                    margin-bottom: 5px;
+                                    font-size: 12px;
+                                    font-weight: 300;
+                                    color: @text_color;
+                                    text-align: right;
+                                }
+                                .temp_result-list {
+                                    margin-top: 37px;
+                                    margin-bottom: 24px;
+                                    .temp_result-list-item {
+                                        position: relative;
+                                        padding-left: 25px;
+                                        &::before {
+                                            position: absolute;
+                                            left: -2px;
+                                            top: 2px;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            content: '1';
+                                            width: 22px;
+                                            height: 22px;
+                                            background: @num_color;
+                                            color: @white;
+                                            font-size: 12px;
+                                            font-weight: 500;
+                                            border-radius: 50%;
+                                        }
+                                        .temp_result-list-item_text {
+                                            font-size: 15px;
+                                            line-height: 27px;
+                                            font-weight: 500;
+                                        }
+                                    }
+                                    .temp_result-list-item:last-child {
+                                        &::before {
+                                            content: "2";
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .block-buttons {
+                        margin-bottom: 60px;
+                        padding-left: 15px;
+
+                        .btn-prew {
+                            width: 79px;
+                            height: 79px;
+                            margin: 0;
+                            margin-right: 30px;
+                            .raleway_bold();
+                            font-size: 39px;
+                        }
+                        .btn-next {
+                            position: relative;
+                            top: -5px;
+                            width: 311px;
+                            height: 79px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
