@@ -148,10 +148,35 @@
                 .bottom-block_gift {
                     position: relative;
                     width: 100%;
-                    border: 1px dashed @black;
+                    border: 2px dashed @black;
                     border-radius: 30px;
                     transform: translate(0, -34px);
                     z-index: 1;
+                    .sale {
+                        position: absolute;
+                        top: -95px;
+                        left: 20px;
+                        display: block;
+                        width: 229px;
+                        height: 229px;
+                        background: @gradient;
+                        border-radius: 50%;
+                        color: @white;
+                        text-align: center;
+                        .sale_title {
+                            margin-top: 30px;
+                            .raleway_bold();
+                            font-weight: 900;
+                            font-size: 48px;
+                            text-transform: uppercase;
+                        }
+                        .sale_text {
+                            width: 50%;
+                            margin: 0 auto;
+                            margin-top: 15px;
+
+                        }
+                    }
                     .gift-title {
                         width: 53%;
                         padding-top: 62px;
