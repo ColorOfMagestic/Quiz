@@ -1,0 +1,96 @@
+.quiz-main {
+    .question-4 {
+        // position: absolute;
+        // top: 0;
+        .accent_question {
+            .accent_question_text_4 {
+                width: 56%;
+                font-family: 'Raleway',sans-serif;
+                font-weight: 500;
+                font-size: @title_desktop;
+            }
+            .accent_question_explanation_4 {
+                margin-top: 4px;
+                width: 75%;
+                font-size: @accent_quest_size_desktop;
+            }
+        }
+        .choice {
+            .color-cards-container {
+                width: 70%;
+                margin-top: 31px;
+                display: flex;
+                flex-wrap: wrap;
+                .color-card {
+                    position: relative;
+                    width: 309px;
+                    height: 259px;
+                    margin-bottom: 30px;
+                    padding: 10px;
+                    border: 1px solid @accent_color;
+                    border-radius: 10px;
+                    &:not(:nth-child(even)){
+                        margin-right: 30px;
+                    }
+
+                    .color-card_form {
+                        width: 100%;
+                        display: flex;
+                        margin-top: 17px;
+                        .color-card_label {
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            width: 100%;
+                            .color-card_check {
+                                position: absolute;
+                                width: 1px;
+                                height: 1px;
+                                overflow: hidden;
+                                clip: rect(0 0 0 0);
+                            }
+                            .check-style {
+                                position: absolute;
+                                width: 20px;
+                                height: 20px;
+                                border: 1px solid @accent_color;
+                                border-radius: 4px;
+                            }
+                            .color-card_check:checked + .check-style::before {
+                                position: absolute;
+                                content: url(../img/check.svg);
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%,-50%);
+                            }
+                            .color-card_text {
+                                width: 75%;
+                                padding-left: 28px;
+                                font-size: 15px;
+                            }
+                            .color-card_text--modern {
+                                .text--modern_span {
+                                    display: block;
+                                    font-size: 12px;
+                                    font-weight: 300;
+                                }
+                            }
+                        }
+                    }
+                }
+                .color-card--other {
+                    &::before {
+                    position: absolute;
+                    top: 20%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    content: url(../../img/color_cup_ps.png);
+                }
+                }
+            }
+        }
+        .block-buttons {
+            margin-top: 75px;
+        }
+    }
+    }
