@@ -1,0 +1,96 @@
+.quiz-main {
+    .question-3 {
+        .accent_question {
+            .accent_question_text_3 {
+                width: 70%;
+                font-family: 'Raleway',sans-serif;
+                font-weight: 500;
+                font-size: @title_desktop;
+            }
+            .accent_question_explanation {
+                margin-top: 4px;
+                width: 69%;
+                font-size: @accent_quest_size_desktop;
+            }
+        }
+        .choice {
+            .slider-cards-container {
+                width: 70%;
+                margin-top: 31px;
+                display: flex;
+                flex-wrap: wrap;
+                .slider-card {
+                    position: relative;
+                    width: 309px;
+                    height: 259px;
+                    margin-bottom: 30px;
+                    padding: 10px;
+                    border: 1px solid @accent_color;
+                    border-radius: 10px;
+                    &:not(:nth-child(even)){
+                        margin-right: 30px;
+                    }
+                    .slider_1 {
+                        .slider_1-button-prev {
+                            &::after {
+                                position: absolute;
+                                left: -1px;
+                                content: url(../img/arrow_left.svg);
+                            }
+                        }
+                        .slider_1-button-next {
+                            &::after {
+                                position: absolute;
+                                right: -1px;
+                                content: url(../img/arrow_right.svg);
+                            }
+                        }
+                    }
+                    .slider-card_form {
+                        width: 100%;
+                        display: flex;
+                        margin-top: 17px;
+                        .slider-card_label {
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            width: 100%;
+                            .slider-card_check {
+                                position: absolute;
+                                width: 1px;
+                                height: 1px;
+                                overflow: hidden;
+                                clip: rect(0 0 0 0);
+                            }
+                            .check-style {
+                                position: absolute;
+                                width: 20px;
+                                height: 20px;
+                                border: 1px solid @accent_color;
+                                border-radius: 4px;
+                            }
+                            .slider-card_check:checked + .check-style::before {
+                                position: absolute;
+                                content: url(../../img/check.svg);
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%,-50%);
+                            }
+                            .slider-card_text {
+                                padding-left: 28px;
+                                font-size: 15px;
+                            }
+                            .slider-card_text--modern {
+                                .text--modern_span {
+                                    display: block;
+                                    font-size: 12px;
+                                    font-weight: 300;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    }
