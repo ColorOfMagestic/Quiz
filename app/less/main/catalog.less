@@ -1,0 +1,254 @@
+.quiz-after-main {
+    .container {
+        .quiz-catalog-wrapper {
+            margin-top: 62px;
+            border-radius: 20px;
+            box-shadow: 2px 0 15px 10px rgba(0, 0, 0, 0.1);
+            .catalog {
+                width: 100%;
+                padding: 0 70px;
+                padding-top:33px;
+                .catalog_tilte {
+                    position: relative;
+                    width: 78.5%;
+                    margin: 0 auto;
+                    margin-top: 28px;
+                    margin-left: 145px;
+                    .raleway_bold();
+                    text-align: center;
+                    &::before {
+                        position: absolute;
+                        top: -80%;
+                        left: -110px;
+                        content: url(../img/lock_open.png);
+                    }
+                }
+                .catalog_good {
+                    margin-top: 58px;
+                    display: flex;
+                    .catalog_good-content {
+                        width: 66%;
+                        margin-top: 60px;
+                        margin-left: 25px;
+                        .catalog_good-content-title {
+                            .raleway_bold();
+                            font-weight: 600;
+                        }
+                        .catalog_good-content-text {
+                            margin-top: 18px;
+                            font-family: 'Raleway',sans-serif;
+                            font-size: 24px;
+
+
+                        }
+                    }
+                }
+                .catalog_gift {
+                    width: 100%;
+                    margin-top: 120px;
+                    border: 2px dashed @black;
+                    border-radius: 30px;
+                    .gift-title {
+                        width: 80%;
+                        .raleway_bold();
+                        margin: 0 auto;
+                        margin-top: 24px;
+                        text-align: center;
+                        .gift_span {
+                            color: #3CCB6D;
+
+                        }
+                    }
+                    .gift_wrapper {
+                        margin-top: 33px;
+                        display: flex;
+                        .gifts {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            width: 49%;
+                            margin-left: 47px;
+                            margin-bottom: 57px;
+                            .gifts_card {
+                                max-width: 102px;
+                                min-height: 119px;
+                                margin-bottom: 10px;
+                                text-align: center;
+                                .gifts_card_descr {
+                                    margin-top: 10px;
+                                    font-size: 16px;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                        .gift_form-container {
+                            width: 30%;
+                            margin-left: auto;
+                            margin-right: 55px;
+                            .gift_form-text {
+                                font-size: 15px;
+                            }
+                            .gift_form {
+                                margin-top: 15px;
+                                .choice-block_label-tel {
+                                    display: flex;
+                                    width: 100%;
+                                    .choice-block_input-tel {
+                                        width: 220px;
+                                        height: 40px;
+                                        margin: 0 auto;
+                                        padding: 11px 41px;
+                                        font-size: 15px;
+                                        border: 1px solid @accent_color;
+                                        border-radius: 80px;
+                                        &:focus {
+                                            outline: none
+                                        }
+                                    }
+                                }
+                            }
+                            .btn_gift_form {
+                                display: block;
+                                width: 220px;
+                                height: 49px;
+                                margin: 0 auto;
+                                margin-top: 15px;
+                                font-size: 16px;
+                            }
+                        }
+
+                    }
+                }
+                .catalog-cards_wrapper {
+                    margin-top: 56px;
+                    .catalog-cards_title {
+                        .raleway_bold();
+                        text-align: center;
+                    }
+                    .catalog-cards {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        margin-top: 37px;
+                        .catalog-card {
+                            width: 29.6%;
+                            min-height: 416px;
+                            margin-bottom: 30px;
+                            border: 1px solid @accent_color;
+                            border-radius: 10px;
+                            .catalog-card-pic {
+                                min-height: auto;
+                            }
+                            .catalog-card-content {
+                                padding: 18px 9px;
+                                .catalog-card_title {
+                                    font-size: 20px;
+                                    font-weight: 600;
+                                }
+                                .price {
+                                    margin-top: 20px;
+                                    .base-price,
+                                    .our-price {
+                                        display: flex;
+                                        align-items: center;
+                                        .price_num {
+                                            margin-left: auto;
+                                            font-weight: 500;
+                                        }
+                                        .base_num {
+                                            margin-right: 35px;
+                                            position: relative;
+                                            color: @secondary_color;
+                                            &::before {
+                                                position: absolute;
+                                                top: 50%;
+                                                left: -5%;
+                                                display: block;
+                                                content: '';
+                                                width: 110%;
+                                                height: 1px;
+                                                background: @secondary_color;
+                                            }
+
+                                        }
+                                        .our_num {
+                                            margin-right: 20px;
+                                            font-size: 23px;
+                                            color: @accent_color;
+                                        }
+                                    }
+                                    .our-price {
+                                        margin-top: 7px;
+                                    }
+
+                                }
+                                .catalog-card_link {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    width: 158px;
+                                    height: 42px;
+                                    margin: 37px auto;
+                                    color: @white;
+                                    font-size: 16px;
+                                    font-weight: 600;
+                                    border-radius: 65px;
+                                    text-decoration: none;
+                                    background: @gradient;
+                                    &:hover {
+                                        background: @accent_color;
+                                    }
+                                    &:active {
+                                        transform: translate(2px,2px);
+                                    }
+
+                                }
+                            }
+                            &:not(:nth-child(3n)) {
+                                margin-right: 30px;
+                            }
+                        }
+                        .catalog-card_video {
+                            border: none;
+                            .video-block_diskr {
+                                margin-top: 19px;
+                                width: 65%;
+                                font-size: 15px;
+                                font-weight: 500px;
+                            }
+                        }
+                    }
+                }
+                .feedback {
+                    margin-top: 60px;
+                    .feedback_title {
+                        width: 80%;
+                        margin: 0 auto;
+                        .raleway_bold();
+                        text-align: center;
+                    }
+                    .feedback_text {
+                        margin-top: 22px;
+                        text-align: center;
+                    }
+                    .feedback-cards_wrapper {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        margin-top: 48px;
+                        .feedback-card {
+                            width: 16%;
+                            min-height: 247px;
+                            background: #c4c4c4;
+                            &:not(:last-child) {
+                                margin-right: 30px;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
