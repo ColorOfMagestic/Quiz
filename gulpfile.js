@@ -10,7 +10,6 @@ const uglify = require('gulp-uglify-es').default;
 const concat = require('gulp-concat');
 const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
-// const svgSprite = require('gulp-svg-sprite');
 const del = require('del');
 
 function cleanDist() {
@@ -63,15 +62,7 @@ function scripts() {
 }
 
 function images() {
-	return src('app/img/**/*.jpg')
-		.pipe(
-			webp({
-				quality: 70
-			})
-		)
-		.pipe(dest('app/img'))
-
-		.pipe(src('app/img/**/*.{jpg,png,svg}'))
+	return (src('app/img/**/*.{jpg,png,svg,webp}'))
 		.pipe(imagemin([
 			imagemin.gifsicle({ interlaced: true }),
 			imagemin.mozjpeg({ progressive: true }),
@@ -86,29 +77,16 @@ function images() {
 		.pipe(dest('dist/img'))
 }
 
-// function sprite() {
-//     return src('app/img/for_sprite/*.svg')
-//         .pipe(svgSprite(
-//             config = {
-//                 shape: {
-//                     dimension: {
-//                         maxWidth: 32,
-//                         maxHeight: 32
-//                     },
-//                     spacing: {
-//                         padding: 15
-//                     }
-//                 },
-//                 mode: {
-//                     stack: {
-//                         sprite: "../icons/icons/svg",
-//                         example: true
-//                     }
-//                 },
-//             }
-//         ))
-//         .pipe(dest('app/img'));
-// }
+
+function Webp() {
+	return src('app/img/**/*.jpg')
+		.pipe(
+			webp({
+				quality: 70
+			})
+		)
+		.pipe(dest('app/img'))
+}
 
 
 function build() {
@@ -126,7 +104,7 @@ exports.styles = styles;
 exports.watching = watching;
 exports.browsersync = browsersync;
 exports.scripts = scripts;
-// exports.svgSprite = sprite;
+exports.Webp = Webp;
 exports.images = images;
 exports.cleanDist = cleanDist;
 
