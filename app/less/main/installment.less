@@ -1,0 +1,116 @@
+.quiz-after-main {
+    .container {
+        .installment-info {
+            .slogan {
+                min-height: 117px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 83px;
+                background: @gradient;
+                .slogan_title {
+                    width: 55%;
+                    margin: 0 auto;
+                    .raleway_bold();
+                    color: @white;
+                    text-align: center;
+
+                }
+            }
+            .container {
+                .cash {
+                    display: flex;
+                    padding: 0 54px;
+                    padding-top: 118px;
+                    .cash_content {
+                        margin-left: 54px;
+                        .cash_content-title {
+                            .raleway_bold();
+                            font-weight: 500;
+                        }
+                        .cash_content-list {
+                            margin-top: 30px;
+                            .cash_content-list_item {
+                                position: relative;
+                                padding-left: 22px;
+                                font-size: 24px;
+                                line-height: 146%;
+                                font-weight: 300;
+                                &::before {
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 0;
+                                    transform: translate(0, -50%);
+                                    content: '';
+                                    display: block;
+                                    width: 15px;
+                                    height: 15px;
+                                    background: @gradient;
+                                    border-radius: 50%;
+                                }
+
+                            }
+                        }
+                        .cash_content-text {
+                            width: 70%;
+                            margin-top: 31px;
+                            font-size: 16px;
+                            font-weight: 300;
+
+                        }
+                        .cash_content-form-wrapper {
+                            margin-top: 33.5px;
+                            display: flex;
+                            align-items: center;
+                            .cash_content-form {
+                                .choice-block_label-tel {
+                                    display: flex;
+                                    .choice-block_input-tel {
+                                        width: 220px;
+                                        height: 49px;
+                                        padding: 11px 41px;
+                                        font-size: 15px;
+                                        border: 1px solid @accent_color;
+                                        border-radius: 80px;
+                                        &:focus {
+                                            outline: none;
+                                        }
+                                    }
+                                }
+                            }
+                            .btn_gift_form {
+                                display: block;
+                                width: 220px;
+                                height: 49px;
+                                margin-left: 20px;
+                                font-size: 16px;
+
+                            }
+
+                        }
+                    }
+                }
+                .social {
+                    width: 79%;
+                    margin:0 auto;
+                    padding: 74px 0;
+                    .social_title {
+                        margin: 0 auto;
+                        .raleway_bold();
+                        text-align: center;
+                    }
+                    .social_link {
+                        display: block;
+                        width: 135px;
+                        height: 135px;
+                        margin: 0 auto;
+                        margin-top: 20px;
+                        margin-bottom: 42px;
+                        font-size: 0;
+                        background-image: url(../img/ig.png);
+                    }
+                }
+            }
+        }
+    }
+}
