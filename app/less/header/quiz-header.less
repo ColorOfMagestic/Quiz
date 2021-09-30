@@ -1,8 +1,7 @@
-@import "../services/support.less";
-
 .quiz-header {
     .quiz-header-wrapper {
-        background-image: url(../img/bg_header_desk.jpg);
+        min-height: 1080px;
+        background-image: url(../img/desktop/bg_header_desk.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         .top-block_wrapper {
@@ -35,7 +34,7 @@
                             top: 2px;
                             left: -36px;
                             display: block;
-                            content: url(../img/phone.svg);
+                            content: url(../img/desktop/phone.svg);
                         }
                     }
                     .link-text {
@@ -116,98 +115,494 @@
                 }
             }
             .bottom-block_wrapper {
-                .bottom-block_title_wrapper {
-                    width: 100%;
-                    margin-top: 32px;
+                margin-top: 32px;
                     .bottom-block_title {
                         width: 65%;
                         margin: 0 auto;
                         font-family: 'Raleway_bold',sans-serif;
+                        color: #402B1B;
                         font-size: @title_desktop;
                         text-align: center;
                     }
-                    .bottom-block_btn {
+                    .bottom-block_gift {
                         position: relative;
-                        display: block;
-                        margin: 0 auto;
-                        margin-top: 31px;
-                        padding: 23px 48px;
-                        background: #63C44B;
-                        font-family: 'Raleway',sans-serif;
-                        font-size: @title_desktop;
-                        z-index: 5;
-                        cursor: pointer;
-                        &:hover {
-                            background: @accent_color;
+                        margin-top: 80px;
+                        width: 100%;
+                        border: 2px dashed @black;
+                        border-radius: 30px;
+                        z-index: 1;
+                        .bottom-block_btn {
+                            position: absolute;
+                            top: -12%;
+                            left: 0;
+                            right: 0;
+                            margin: 0 auto;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 377px;
+                            height: 86px;
+                            background: #63C44B;
+                            font-family: 'Raleway',sans-serif;
+                            font-size: @title_desktop;
+                            z-index: 5;
+                            cursor: pointer;
+                            &:hover {
+                                background: @accent_color;
+                            }
+                            &:active {
+                                transform: translate(2px,2px);
+                            }
                         }
-                        &:active {
-                            transform: translate(2px,2px);
+                        .sale {
+                            position: absolute;
+                            top: -95px;
+                            left: 20px;
+                            display: block;
+                            width: 229px;
+                            height: 229px;
+                            background: @gradient;
+                            border-radius: 50%;
+                            color: @white;
+                            text-align: center;
+                            .sale_title {
+                                margin-top: 30px;
+                                .raleway_bold();
+                                font-weight: 900;
+                                font-size: 48px;
+                                text-transform: uppercase;
+                            }
+                            .sale_text {
+                                width: 50%;
+                                margin: 0 auto;
+                                margin-top: 15px;
+                            }
+                        }
+                        .gift-title {
+                            width: 53%;
+                            padding-top: 62px;
+                            margin: 0 auto;
+                            font-family: 'Raleway_bold',sans-serif;
+                            font-size: @title_desktop;
+                            text-align: center;
+                            .gift_span {
+                                color: @accent_color;
+                            }
+                        }
+                        .gifts {
+                            width: 53%;
+                            display: flex;
+                            justify-content: space-between;
+                            margin: 0 auto;
+                            margin-top: 43px;
+                            .gifts_card {
+                                max-width: 102px;
+                                min-height: 119px;
+                                margin-bottom: 10px;
+                                text-align: center;
+                                .gifts_card-pic {
+                                    margin: 0 auto;
+                                }
+                                .gifts_card_descr {
+                                    padding-top: 10px;
+                                    .descr_span {
+                                        font-weight: bold;
+                                    }
+                                }
+                            }
+                        }
+                    }
+            }
+        }
+    }
+}
+@media (min-width: @mobile) and (max-width: @tablet) {
+    .quiz-header {
+        .quiz-header-wrapper {
+            min-height: 1113px;
+            background-image: url(../img/mobile/bg_header_desk.jpg);
+            background-size: 100%;
+            .top-block_wrapper {
+                padding-top: 10px;
+                .logo {
+                    max-width: 54px;
+                }
+                .top-block_info {
+                    margin-left: 6px;
+                    padding-top: 5px;
+                    .top-block_info-text {
+                        font-size: 11px;
+                    }
+                    .top-block_info-links {
+                        .link-phone {
+                            font-size: 15px;
+                            &::after {
+                                left: -11px;
+                                content: url(../img/mobile/phone.svg);
+                            }
+                        }
+                        .link-text {
+                            font-size: 12px;
+                            &::after {
+                                bottom: 1px;
+                            }
                         }
                     }
                 }
-                .bottom-block_gift {
-                    position: relative;
-                    width: 100%;
-                    border: 2px dashed @black;
-                    border-radius: 30px;
-                    transform: translate(0, -34px);
-                    z-index: 1;
-                    .sale {
-                        position: absolute;
-                        top: -95px;
-                        left: 20px;
-                        display: block;
-                        width: 229px;
-                        height: 229px;
-                        background: @gradient;
-                        border-radius: 50%;
-                        color: @white;
-                        text-align: center;
-                        .sale_title {
-                            margin-top: 30px;
-                            .raleway_bold();
-                            font-weight: 900;
-                            font-size: 48px;
-                            text-transform: uppercase;
+            }
+            .header-content {
+                margin-top: 20px;
+                padding-left: 0;
+                .quiz-header_title {
+                    width: 90%;
+                    font-size: 22px;
+                    letter-spacing: 0;
+                }
+                .benefit-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 10px;
+                    .benefit-list {
+                        .benefit-list-item {
+                            padding-left: 12px;
+                            font-size: 14px;
+                            line-height: 141%;
+                            &::before {
+                                top: 20%;
+                            }
                         }
-                        .sale_text {
-                            width: 50%;
-                            margin: 0 auto;
-                            margin-top: 15px;
+                    }
+                    .installment {
+                        margin: 0;
+                        margin-top: 5px;
+                        padding: 0 66px ;
+                        .installment-text {
+                            font-size: 15px;
+                        }
+                        .installment-text--top {
+                            padding-top: 4px;
+                        }
+                        .installment-text--bottom {
+                            padding-bottom: 4px;
 
                         }
-                    }
-                    .gift-title {
-                        width: 53%;
-                        padding-top: 62px;
-                        margin: 0 auto;
-                        font-family: 'Raleway_bold',sans-serif;
-                        font-size: @title_desktop;
-                        text-align: center;
-                        .gift_span {
-                            color: @accent_color;
+                        .installment-text--lg {
+                            padding: 0;
+                            font-size: 21px;
                         }
                     }
-                    .gifts {
-                        width: 53%;
-                        display: flex;
-                        justify-content: space-between;
-                        margin: 0 auto;
-                        margin-top: 43px;
-                        .gifts_card {
-                            max-width: 102px;
-                            min-height: 119px;
-                            margin-bottom: 10px;
-                            text-align: center;
-                            .gifts_card-pic {
-                                margin: 0 auto;
+                }
+                .bottom-block_wrapper {
+                    margin-top: 30px;
+                        .bottom-block_title {
+                            width: 100%;
+                            font-size: 16px;
+                        }
+                    .bottom-block_gift {
+                        margin-top: 192px;
+                        .bottom-block_btn {
+                            top: -5%;
+                            width: 206px;
+                            height: 47px;
+                            font-size: 16px;
+                        }
+                        .sale {
+                            // opacity: 0;
+                            top: -175px;
+                            left: 50%;
+                            transform: translate(-50%);
+                            width: 130px;
+                            height: 130px;
+                            .sale_title {
+                                margin-top: 17px;
+                                font-size: 30px;
                             }
-                            .gifts_card_descr {
-                                padding-top: 10px;
+                            .sale_text {
+                                width: 80%;
+                                margin: 0 auto;
+                                margin-top: 0;
+                                font-size: 13px;
+                            }
+                        }
+                        .gift-title {
+                            width: 100%;
+                            padding-top: 39px;
+                            font-size: 17px;
+                            .gift_span {
+                                font-size: 17px;
+                            }
+                        }
+                        .gifts {
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            margin-top: 17px;
+                            margin-bottom: 28px;
+                            .gifts_card {
+                                max-width: 92px;
+                                min-height: 112px;
+                                margin-bottom: 0;
+                                text-align: center;
+                                .gifts_card-pic {
+                                    margin: 0 auto;
+                                }
+                                .gifts_card_descr {
+                                    font-size: 16px;
+                                    padding-top: 10px;
+                                }
                             }
                         }
                     }
                 }
+            }
+        }
+    }
+}
+@media (min-width: @tablet) and (max-width: @laptop) {
+    .quiz-header {
+        .quiz-header-wrapper {
+            min-height: 985px;
+            background-image: url(../img/tablet/bg_header_desk.jpg);
+            .top-block_wrapper {
+                .logo {
+                    max-width: 106px;
+                }
+                .top-block_info {
+                    margin-left: 12px;
+                    padding-top: 10px;
+                    .top-block_info-text {
+                        font-size: 16px;
+                    }
+                    .top-block_info-links {
+                        .link-phone {
+                            font-size: 24px;
+                            &::after {
+                                left: -24px;
+                                content: url(../img/tablet/phone.svg);
+                            }
+                        }
+                        .link-text {
+                            font-size: 15px;
+                            &::after {
+                                bottom: 2px;
+                            }
+                        }
+                    }
+                }
+            }
+            .header-content {
+                margin-top: 33px;
+                .quiz-header_title {
+                    width: 100%;
+                    font-size: 39px;
+                }
+                .benefit-wrapper {
+                    .benefit-list {
+                        .benefit-list-item {
+                            font-size: 18px;
+                            &::before {
+                                top: 30%;
+                            }
+                        }
+                    }
+                    .installment {
+                        width: 60%;
+                        margin-top: 0px;
+                        margin-left: auto;
+                        margin-right: 45px;
+                        padding: 0 65px ;
+                        transform: translate(0,-30px) rotate(-4deg);
+                        .installment-text {
+                            font-size: 20px;
+                        }
+                        .installment-text--top {
+                            padding-top: 4px;
+                        }
+                        .installment-text--bottom {
+                            padding-bottom: 4px;
+
+                        }
+                        .installment-text--lg {
+                            padding: 5px;
+                            font-size: 27px;
+                        }
+                    }
+                }
+                .bottom-block_wrapper {
+                    .bottom-block_title {
+                        width: 90%;
+                        margin-top: 30px;
+                        font-size: 22px;
+                    }
+                    .bottom-block_gift {
+                        margin-top: 93px;
+                        .bottom-block_btn {
+                            top: -12%;
+                            width: 258px;
+                            height: 59px;
+                            font-size: 18px;
+                        }
+                        .sale {
+                            position: absolute;
+                            top: -95px;
+                            left: 0;
+                            width: 152px;
+                            height: 152px;
+                            .sale_title {
+                                margin-top: 20px;
+                                font-size: 38px;
+                            }
+                            .sale_text {
+                                width: 90%;
+                                margin-top: 0;
+                                font-size: 15px;
+                            }
+                        }
+                        .gift-title {
+                            width: 70%;
+                            padding-top: 60px;
+                            font-size: 22px;
+                        }
+                        .gifts {
+                            width: 90%;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            margin: 0 auto;
+                            margin-top: 30px;
+                            .gifts_card {
+                                margin-bottom: 43px;
+                                text-align: center;
+                                .gifts_card-pic {
+                                    margin: 0 auto;
+                                }
+                                .gifts_card_descr {
+                                    font-size: 16px;
+                                    padding-top: 10px;
+                                }
+                            }
+                        }
+                    }
+
+            }
+            }
+        }
+    }
+}
+@media (min-width: @laptop) and (max-width: @desktop) {
+    .quiz-header {
+        .quiz-header-wrapper {
+            min-height: 1080px;
+            background-image: url(../img/laptop/bg_header_desk.jpg);
+            .top-block_wrapper {
+                padding-top: 27px;
+                .logo {
+                    max-width: 130px;
+                }
+                .top-block_info {
+                    margin-left: 9px;
+                    padding-top: 10px;
+                    .top-block_info-text {
+                        font-size: 18px;
+                    }
+                    .top-block_info-links {
+                        .link-phone {
+                            .raleway_bold();
+                            &::after {
+                                left: -39px;
+                                content: url(../img/desktop/phone.svg);
+                            }
+                        }
+                        .link-text {
+                            font-size: 18px;
+                            &::after {
+                                bottom: 3px;
+                            }
+                        }
+                    }
+                }
+            }
+            .header-content {
+                margin-top: 68px;
+                .quiz-header_title {
+                    width:60%;
+                    font-size: 48px;
+                }
+                .benefit-wrapper {
+                    margin-top: 44px;
+                    .benefit-list {
+                        .benefit-list-item {
+                            font-size: 18px;
+                            &::before {
+                                top: 35%;
+                            }
+                        }
+                    }
+                    .installment {
+                        width: 45%;
+                        margin-top: 0px;
+                        margin-left: auto;
+                        margin-right: 65px;
+                        padding: 0;
+                        transform: translate(0,-20px) rotate(-4deg);
+                        .installment-text {
+                            font-size: 20px;
+                        }
+                        .installment-text--top {
+                            padding-top: 7px;
+                        }
+                        .installment-text--bottom {
+                            padding-bottom: 7px;
+
+                        }
+                        .installment-text--lg {
+                            padding: 7px;
+                            font-size: 27px;
+                        }
+                    }
+                }
+                .bottom-block_wrapper {
+                    margin-top: 25px;
+                    .bottom-block_title {
+                        width: 80%;
+                        margin-top: 25px;
+                        font-size: 25px;
+                    }
+                    .bottom-block_gift {
+                        margin-top: 93px;
+                        .bottom-block_btn {
+                            top: -12%;
+                            width: 324px;
+                            height: 74px;
+                            font-size: 24px;
+                        }
+                        .sale {
+                            left: 0;
+                            width: 203px;
+                            height: 203px;
+                            .sale_title {
+                                margin-top: 26px;
+                            }
+                            .sale_text {
+                                width: 60%;
+                                margin: 0 auto;
+                                margin-top: 7px;
+                                font-size: 18px;
+                            }
+                        }
+                        .gift-title {
+                            width: 60%;
+                            padding-top: 50px;
+                            font-size: 28px;
+                        }
+                        .gifts {
+                            width: 60%;
+                            margin-top: 26px;
+                        }
+                    }
+
+            }
             }
         }
     }
