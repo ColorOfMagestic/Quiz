@@ -26,3 +26,106 @@
     }
 }
 }
+@media (min-width: @laptop) and (max-width: @desktop) {
+    .quiz-main {
+        .question-2 {
+            .accent_question {
+                .accent_question_explanation {
+                    margin-top: 4px;
+                    width: 69%;
+                    font-size: @accent_quest_size_desktop;
+                }
+            }
+            .choice {
+                .choice_form {
+                    .choice_label {
+                        max-width: 95%;
+                    }
+                }
+                .frame {
+                    width: 25%;
+                    margin-left: auto;
+                    padding-top: 40px;
+                    .frame-text {
+                        padding: 0 21px;
+                        padding-top: 0;
+                        font-size: 16px;
+                    }
+                    .frame-pic {
+                        width: 100%;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+        }
+}
+@media (min-width: @tablet) and (max-width: @laptop) {
+    .quiz-main {
+        .question-2 {
+            .accent_question {
+                .accent_question_explanation {
+                    margin-top: 6px;
+                    width: 60%;
+                    font-size: 13px;
+                }
+            }
+            .choice {
+                .frame {
+                    width: 100%;
+                    margin-left: 0;
+                    padding-top: 0px;
+                    display: flex;
+                    align-items: center;
+                    .frame-text {
+                        width: 45%;
+                        padding: 0;
+                        margin-left: 30px;
+                        font-size: 16px;
+                    }
+                    .frame-pic {
+                        width: 100%;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+        }
+}
+@media (min-width: @mobile) and (max-width: @tablet) {
+    .quiz-main {
+        .question-2 {
+            .accent_question {
+                .accent_question_explanation {
+                    width: 85%;
+                    margin: 0 auto;
+                    margin-top: 5px;
+                    font-size: 10px;
+                    text-align: center;
+                }
+            }
+            .choice {
+                .frame {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-top: 0;
+                    .frame-text {
+                        width: 90%;
+                        padding: 0;
+                        padding-top: 25px;
+                        margin-left: 0;
+                        font-size: 15px;
+                    }
+                    .frame-pic {
+                        width: 100%;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
