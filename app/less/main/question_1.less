@@ -1,5 +1,3 @@
-@import "../services/support.less";
-
 .quiz-main {
     .container{
         .quiz-main_wrapper {
@@ -53,13 +51,13 @@
                                 top: 23%;
                                 right: 1%;
                                 display: flex;
-                                justify-content: end;
+                                justify-content: flex-end;
                                 width: 100%;
                                 &::before {
                                     position: absolute;
                                     top: -10px;
                                     right: 50px;
-                                    content: url(../img/boss_desk.png);
+                                    content: url(../img/desktop/boss_desk.png);
                                 }
                                 .temp_result-boss_text {
                                     width:10%;
@@ -221,3 +219,427 @@
         }
     }
 }
+
+@media (min-width: @laptop) and (max-width: @desktop) {
+    .quiz-main {
+        .container{
+            .quiz-main_wrapper {
+                margin-top: 0;
+                .question {
+                    box-shadow: none;
+                    .question_container {
+                        padding: 64px 0;
+                        .question_title {
+                            width: 70%;
+                            margin: 0 auto;
+                            font-size: 30px;
+                        }
+                        .question_title_text {
+                            margin-top: 10px;
+                            font-size: 18px;
+                        }
+                        .steps {
+                            max-width: 333px;
+                            margin-top: 24px;
+                            .step {
+                                width: 65px;
+                                height: 11px;
+                                &:not(:last-child) {
+                                    margin-right: 15px;
+                                }
+                            }
+                        }
+                        .accent_question {
+                            width: 90%;
+                            margin: 0 auto;
+                            margin-top: 31px;
+                            min-height: 141px;
+                            .temp_result-boss {
+                                top: 34%;
+                                right: 2%;
+                                display: flex;
+                                &::before {
+                                    right: 70px;
+                                    content: url(../img/laptop/boss.png);
+                                }
+                                .temp_result-boss_text {
+                                    width:11%;
+                                    font-size: 12px;
+                                }
+                            }
+                            .accent_question_text {
+                                width: 70%;
+                                font-size: 30px;
+                                text-align: left;
+                            }
+                        }
+                        .choice {
+                            flex-direction:row;
+                            .choice_form {
+                                width: 38%;
+                                margin-top: 71px;
+                                .choice_label {
+                                    width: 100%;
+                                    height: 62px;
+                                    margin-left: 20px;
+                                    &:not(:last-child) {
+                                        margin-bottom: 17px;
+                                    }
+                                    .radio-style {
+                                        width: 24px;
+                                        height: 24px;
+                                    }
+                                    .choice_input:checked + .radio-style::before {
+                                        width: 14px;
+                                        height: 14px;
+                                    }
+                                    .choice_text {
+                                        width: 95%;
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                            .temp_result-wrapper {
+                                width: 30%;
+                                margin: 0;
+                                margin-left: auto;
+                                margin-top: 40px;
+                                margin-right: 45px;
+                                .temp_result {
+                                    .temp_result_container {
+                                        padding: 11px 14px;
+                                    }
+                                    .temp_result_calling {
+                                        width: 100%;
+                                        margin-top: 17px;
+                                        font-size: 18px;
+                                    }
+                                    .temp_result-list {
+                                        margin-top: 30px;
+                                        margin-bottom: 15px;
+                                        .temp_result-list-item {
+                                            position: relative;
+                                            padding-left: 22px;
+                                            &::before {
+                                                left: 0;
+                                                top: 2px;
+                                                width: 16px;
+                                                height: 16px;
+                                            }
+                                            .temp_result-list-item_text {
+                                                line-height: 22px;
+                                            }
+                                        }
+                                        .temp_result-list-item:last-child {
+                                            &::before {
+                                                content: "2";
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .block-buttons {
+                            display: flex;
+                            justify-content: flex-start;
+                            margin-top: 0;
+                            .btn-prew {
+                                width: 66px;
+                                height: 66px;
+                                margin-right: 26px;
+                                font-size: 39px;
+                            }
+                            .btn-next {
+                                top: 0;
+                                width: 260.5px;
+                                height: 65px;
+                                font-size: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media (min-width: @tablet) and (max-width: @laptop) {
+    .quiz-main {
+        .container{
+            .quiz-main_wrapper {
+                margin-top: 0;
+                .question {
+                    box-shadow: none;
+                    .question_container {
+                        padding: 54px 0;
+                        .question_title {
+                            font-size: 27px;
+                        }
+                        .question_title_text {
+                            margin-top: 6px;
+                            font-size: 18px;
+                        }
+                        .steps {
+                            max-width: 80%;
+                            margin-top: 20px;
+                            .step {
+                                width: 65px;
+                                height: 11px;
+                                &:not(:last-child) {
+                                    margin-right: 15px;
+                                }
+                            }
+                        }
+                        .accent_question {
+                            min-height: 142px;
+                            padding-top: 41px;
+                            padding-left: 26px;
+                            .temp_result-boss {
+                                top: 23%;
+                                right: 2%;
+                                display: flex;
+                                &::before {
+                                    right: 70px;
+                                    content: url(../img/tablet/boss.png);
+                                }
+                                .temp_result-boss_text {
+                                    width:13%;
+                                    font-size: 10px;
+                                }
+                            }
+                            .accent_question_text {
+                                width: 60%;
+                                font-size: 20px;
+                                text-align: left;
+                            }
+                        }
+                        .accent_question_2 {
+                            padding-top: 26px;
+                        }
+                        .choice {
+                            flex-direction: column;
+                            .choice_form {
+                                width: 100%;
+                                margin-top: 30px;
+                                .choice_label {
+                                    width: 90%;
+                                    height: 62px;
+                                    margin: 0 auto;
+                                    &:not(:last-child) {
+                                        margin-bottom: 17px;
+                                    }
+                                    .radio-style {
+                                        width: 24px;
+                                        height: 24px;
+                                    }
+                                    .choice_input:checked + .radio-style::before {
+                                        width: 14px;
+                                        height: 14px;
+                                    }
+                                    .choice_text {
+                                        width: 100%;
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                            .temp_result-wrapper {
+                                width: 45%;
+                                margin: 0 auto;
+                                margin-top: 40px;
+                                .temp_result {
+                                    .temp_result_container {
+                                        padding: 11px 14px;
+                                    }
+                                    .temp_result_calling {
+                                        width: 100%;
+                                        margin-top: 17px;
+                                        font-size: 18px;
+                                    }
+                                    .temp_result-list {
+                                        margin-top: 30px;
+                                        margin-bottom: 15px;
+                                        .temp_result-list-item {
+                                            position: relative;
+                                            padding-left: 22px;
+                                            &::before {
+                                                left: 0;
+                                                top: 2px;
+                                                width: 16px;
+                                                height: 16px;
+                                            }
+                                            .temp_result-list-item_text {
+                                                line-height: 22px;
+                                            }
+                                        }
+                                        .temp_result-list-item:last-child {
+                                            &::before {
+                                                content: "2";
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .temp_result-wrapper_2 {
+                                margin-top: 0;
+                            }
+                        }
+                        .block-buttons {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-top: 47px;
+
+                            .btn-prew {
+                                width: 66px;
+                                height: 66px;
+                                margin-right: 26px;
+                                font-size: 39px;
+                            }
+                            .btn-next {
+                                top: 0;
+                                width: 260.5px;
+                                height: 65px;
+                                font-size: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: @mobile) and (max-width: @tablet) {
+    .quiz-main {
+        .container{
+            .quiz-main_wrapper {
+                margin-top: 0;
+                .question {
+                    box-shadow: none;
+                    .question_container {
+                        width: 100%;
+                        padding: 23px 0;
+                        .question_title {
+                            font-size: 18px;
+                        }
+                        .question_title_text {
+                            margin-top: 5px;
+                            font-size: 14px;
+                        }
+                        .steps {
+                            max-width: 100%;
+                            margin-top: 20px;
+                            .step {
+                                width: 36px;
+                                height: 11px;
+                            }
+                        }
+                        .accent_question {
+                            width: 96%;
+                            min-height: 142px;
+                            margin: 0 auto;
+                            margin-top: 30px;
+                            padding: 41px;
+                                .temp_result-boss {
+                                    display: none;
+                                }
+                            .accent_question_text {
+                                width: 80%;
+                                margin: 0 auto;
+                                font-size: 17px;
+                                text-align: center;
+                            }
+                        }
+                        .accent_question_2 {
+                            padding: 13px 40px;
+                        }
+                        .choice {
+                            flex-direction: column;
+                            .choice_form {
+                                    width: 100%;
+                                    margin-top: 40px;
+                                .choice_label {
+                                    height: 62px;
+                                    &:not(:last-child) {
+                                        margin-bottom: 17px;
+                                    }
+                                    .radio-style {
+                                        width: 24px;
+                                        height: 24px;
+                                    }
+                                    .choice_input:checked + .radio-style::before {
+                                        width: 14px;
+                                        height: 14px;
+                                    }
+                                    .choice_text {
+                                        width: 95%;
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                            .temp_result-wrapper {
+                                width: 100%;
+                                max-height: 368px;
+                                margin-top: 40px;
+                                margin-left: 0;
+                                .temp_result {
+                                    .temp_result_container {
+                                        padding: 11px 14px;
+                                    }
+                                    .temp_result_calling {
+                                        width: 90%;
+                                        margin-top: 17px;
+                                        font-size: 18px;
+                                    }
+                                    .temp_result-list {
+                                        margin-top: 30px;
+                                        margin-bottom: 15px;
+                                        .temp_result-list-item {
+                                            position: relative;
+                                            padding-left: 22px;
+                                            &::before {
+                                                left: 0;
+                                                top: 2px;
+                                                width: 16px;
+                                                height: 16px;
+                                            }
+                                            .temp_result-list-item_text {
+                                                line-height: 22px;
+                                            }
+                                        }
+                                        .temp_result-list-item:last-child {
+                                            &::before {
+                                                content: "2";
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .temp_result-wrapper_2 {
+                                margin-top: 0;
+                            }
+                        }
+                        .block-buttons {
+                            margin-top: 41px;
+                            margin-bottom: 0;
+                            padding-left: 0;
+
+                            .btn-prew {
+                                width: 49px;
+                                height: 49px;
+                                margin-right: 20px;
+                                font-size: 29px;
+                            }
+                            .btn-next {
+                                top: -3px;
+                                width: 193px;
+                                height: 48px;
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
