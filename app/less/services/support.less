@@ -90,3 +90,31 @@ h1,h2,h3,h4 {
         transform: translate(2px,2px);
     }
 }
+
+// Adaptive sizes
+
+@media (min-width: @mobile) and (max-width: @tablet) {
+    .container {
+        width: 287px;
+        max-width: 287px;
+        margin: 0 auto;
+    }
+
+}
+
+@media (min-width: @tablet) and (max-width: @laptop) {
+    .container {
+        width: 611px;
+        max-width: 611px;
+        margin: 0 auto;
+    }
+
+}
+@media (min-width: @laptop) and (max-width: @desktop) {
+    .container {
+        width: 928px;
+        max-width: 928px;
+        margin: 0 auto;
+    }
+
+}
