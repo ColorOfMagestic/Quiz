@@ -1,12 +1,12 @@
 .quiz-after-main {
     .container {
         .quiz-catalog-wrapper {
-            margin-top: 62px;
+            margin-top: 82px;
             border-radius: 20px;
             box-shadow: 2px 0 15px 10px rgba(0, 0, 0, 0.1);
             .catalog {
                 width: 100%;
-                padding: 0 70px;
+                padding: 0 82px;
                 padding-top:33px;
                 .catalog_tilte {
                     position: relative;
@@ -20,7 +20,7 @@
                         position: absolute;
                         top: -80%;
                         left: -110px;
-                        content: url(../img/lock_open.png);
+                        content: url(../img/desktop/lock_open.png);
                     }
                 }
                 .catalog_good {
@@ -43,9 +43,24 @@
                         }
                     }
                 }
+                .founder {
+                    width: 245px;
+                    margin-left: 30px;
+                    .founder_name {
+                        margin-top: 18px;
+                        font-weight: 300;
+                        text-align: center;
+
+                    }
+                    .founder_text {
+                        font-weight: 500;
+                        text-align: center;
+
+                    }
+                }
                 .catalog_gift {
                     width: 100%;
-                    margin-top: 120px;
+                    margin-top: 32px;
                     border: 2px dashed @black;
                     border-radius: 30px;
                     .gift-title {
@@ -74,6 +89,9 @@
                                 min-height: 119px;
                                 margin-bottom: 10px;
                                 text-align: center;
+                                .gifts_card-pic {
+                                    margin: 0 auto;
+                                }
                                 .gifts_card_descr {
                                     margin-top: 10px;
                                     font-size: 16px;
@@ -116,7 +134,6 @@
                                 font-size: 16px;
                             }
                         }
-
                     }
                 }
                 .catalog-cards_wrapper {
@@ -214,7 +231,7 @@
                                 margin-top: 19px;
                                 width: 65%;
                                 font-size: 15px;
-                                font-weight: 500px;
+                                font-weight: 500;
                             }
                         }
                     }
@@ -251,4 +268,662 @@
             }
         }
     }
+}
+@media (min-width: @laptop) and (max-width: @desktop) {
+    .quiz-after-main {
+        .container {
+            .quiz-catalog-wrapper {
+                margin-top: 0;
+                border-radius: 0;
+                box-shadow: none;
+                .catalog {
+                    width: 100%;
+                    padding: 0 50px;
+                    padding-top:70px;
+                    .catalog_tilte {
+                        margin-left: 145px;
+                        .raleway_bold();
+                        text-align: left;
+                        &::before {
+                            position: absolute;
+                            top: 0%;
+                            left: -90px;
+                            content: url(../img/tablet/lock_open.png);
+                        }
+                    }
+                    .catalog_good {
+                        margin-top: 30px;
+                        .catalog_good-content {
+                            width: 66%;
+                            margin-top: 60px;
+                            margin-left: 25px;
+                            .catalog_good-content-title {
+                                .raleway_bold();
+                                font-weight: 600;
+                            }
+                            .catalog_good-content-text {
+                                margin-top: 18px;
+                                font-family: 'Raleway',sans-serif;
+                                font-size: 20px;
+
+
+                            }
+                        }
+                    }
+                    .founder {
+                    width: 242px;
+                    margin-left: 5px;
+                    .founder_name {
+                        margin-top: 15px;
+                    }
+                    .founder_text {
+                        font-weight: 500;
+                        text-align: center;
+                    }
+                }
+                    .catalog_gift {
+                        margin-top: 69px;
+                        .gift-title {
+                            width: 85%;
+                            margin-top: 20px;
+                        }
+                        .gift_wrapper {
+                            margin-top: 25px;
+                            .gifts {
+                                margin-left: 47px;
+                                margin-bottom: 38px;
+                                .gifts_card {
+                                    max-width: 102px;
+                                    min-height: 109px;
+                                    margin-bottom: 10px;
+                                    .gifts_card_descr {
+                                        margin-top: 10px;
+                                        font-size: 16px;
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                            .gift_form-container {
+                                width: 35%;
+                                margin-left: auto;
+                                margin-right: 32px;
+                                .gift_form-text {
+                                    font-size: 15px;
+                                }
+                                .gift_form {
+                                    margin-top: 12px;
+                                    .choice-block_label-tel {
+                                        .choice-block_input-tel {
+                                            width: 183px;
+                                            height: 35px;
+                                            padding: 10px 27px;
+                                            font-size: 15px;
+                                        }
+                                    }
+                                }
+                                .btn_gift_form {
+                                    width: 185px;
+                                    height: 41px;
+                                    margin-top: 15px;
+                                    font-size: 16px;
+                                }
+                            }
+
+                        }
+                    }
+                    .catalog-cards_wrapper {
+                        margin-top: 64px;
+                        .catalog-cards_title {
+                            width: 75%;
+                            margin: 0 auto;
+                        }
+                        .catalog-cards {
+                            margin-top: 24px;
+                            .catalog-card {
+                                width: 29.6%;
+                                min-height: 378px;
+                                margin-bottom: 27px;
+                                .catalog-card-content {
+                                    padding: 14px 8px;
+                                    .catalog-card_title {
+                                        font-size: 20px;
+                                        font-weight: 600;
+                                    }
+                                    .price {
+                                        margin-top: 17px;
+                                        .base-price,
+                                        .our-price {
+                                            display: flex;
+                                            align-items: center;
+                                            .price_num {
+                                                margin-left: auto;
+                                                font-weight: 500;
+                                            }
+                                            .base_num {
+                                                margin-right: 15px;
+                                                position: relative;
+                                                color: @secondary_color;
+                                            }
+                                            .our_num {
+                                                margin-right: 0;
+                                                font-size: 23px;
+                                                color: @accent_color;
+                                            }
+                                        }
+                                        .our-price {
+                                            margin-top: 6px;
+                                        }
+
+                                    }
+                                    .catalog-card_link {
+                                        width: 143px;
+                                        height: 38px;
+                                        margin: 23px auto;
+                                    }
+                                }
+                                &:not(:nth-child(3n)) {
+                                    margin-right: 27px;
+                                }
+                            }
+                            .catalog-card_video {
+                                border: none;
+                                .video-block_diskr {
+                                    width: 80%;
+                                    margin-top: 7px;
+                                    font-size: 15px;
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+                    }
+                    .feedback {
+                        margin-top: 66px;
+                        .feedback_title {
+                            width: 80%;
+                        }
+                        .feedback_text {
+                            width: 60%;
+                            margin: 0 auto;
+                            margin-top: 18px;
+                        }
+                        .feedback-cards_wrapper {
+                            margin-top: 25px;
+                            .feedback-card {
+                                width: 16%;
+                                min-height: 206px;
+                                background: #c4c4c4;
+                                &:not(:last-child) {
+                                    margin-right: 28px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: @tablet) and (max-width: @laptop) {
+    .quiz-after-main {
+        .container {
+            .quiz-catalog-wrapper {
+                margin-top: 0;
+                border-radius: none;
+                box-shadow: none;
+                .catalog {
+                    width: 100%;
+                    padding: 0 20px;
+                    padding-top:61px;
+                    .catalog_tilte {
+                        margin-left: 145px;
+                        .raleway_bold();
+                        font-size: 27px;
+                        text-align: left;
+                        &::before {
+                            position: absolute;
+                            top: 0%;
+                            left: -90px;
+                            content: url(../img/tablet/lock_open.png);
+                        }
+                    }
+                    .catalog_good {
+                        margin-top: 25px;
+                        .catalog_good-content {
+                            width: 60%;
+                            margin-top: 60px;
+                            margin-left: 25px;
+                            .catalog_good-content-title {
+                                .raleway_bold();
+                                font-size: 24px;
+                                font-weight: 600;
+                            }
+                            .catalog_good-content-text {
+                                margin-top: 16px;
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                    .founder {
+                    width: 216px;
+                    margin-left: -15px;
+                    .founder_name {
+                        margin-top: 15px;
+                        font-size: 16px;
+                    }
+                    .founder_text {
+                        font-size: 16px;
+                        font-weight: 500;
+                        text-align: center;
+                    }
+                }
+                    .catalog_gift {
+                        margin-top: 28px;
+                        .gift-title {
+                            width: 85%;
+                            margin-top: 20px;
+                            font-size: 24px;
+                        }
+                        .gift_wrapper {
+                            margin-top: 31px;
+                            flex-direction: column;
+                            .gifts {
+                                width: 80%;
+                                margin-left: 61px;
+                                margin-bottom: 24px;
+                                .gifts_card {
+                                    max-width: 102px;
+                                    min-height: 109px;
+                                    margin-bottom: 0;
+                                    .gifts_card_descr {
+                                        margin-top: 10px;
+                                        font-size: 16px;
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                            .gift_form-container {
+                                width: 100%;
+                                margin: 0;
+                                .gift_form-text {
+                                    width: 50%;
+                                    margin: 0 auto;
+                                    font-size: 15px;
+                                    text-align: center;
+                                }
+                                .gift_form {
+                                    margin-top: 12px;
+                                    .choice-block_label-tel {
+                                        .choice-block_input-tel {
+                                            width: 180px;
+                                            height: 35px;
+                                            padding: 8px 25px;
+                                            font-size: 15px;
+                                        }
+                                    }
+                                }
+                                .btn_gift_form {
+                                    width: 185px;
+                                    height: 41px;
+                                    margin-top: 15px;
+                                    margin-bottom: 19px;
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                    .catalog-cards_wrapper {
+                        margin-top: 56px;
+                        .catalog-cards_title {
+                            width: 98%;
+                            font-size: 27px;
+                            margin: 0 auto;
+                        }
+                        .catalog-cards {
+                            justify-content: flex-start;
+                            margin: 0 auto;
+                            margin-top: 35px;
+                            .catalog-card {
+                                width: 40%;
+                                min-height: 378px;
+                                margin-bottom: 27px;
+                                .catalog-card-content {
+                                    padding: 14px 8px;
+                                    .catalog-card_title {
+                                        font-size: 20px;
+                                        font-weight: 600;
+                                    }
+                                    .price {
+                                        margin-top: 17px;
+                                        .base-price,
+                                        .our-price {
+                                            display: flex;
+                                            align-items: center;
+                                            .price_num {
+                                                margin-left: auto;
+                                                font-weight: 500;
+                                            }
+                                            .base_num {
+                                                margin-right: 15px;
+                                                position: relative;
+                                                color: @secondary_color;
+                                            }
+                                            .our_num {
+                                                margin-right: 0;
+                                                font-size: 23px;
+                                                color: @accent_color;
+                                            }
+                                        }
+                                        .our-price {
+                                            margin-top: 6px;
+                                        }
+
+                                    }
+                                    .catalog-card_link {
+                                        width: 143px;
+                                        height: 38px;
+                                        margin: 23px auto;
+                                    }
+                                }
+                                &:not(:nth-child(3n)) {
+                                    margin-right: 0;
+                                }
+                                &:not(:nth-child(odd)) {
+                                    margin-right: 27px;
+                                    margin-left: 40px;
+                                }
+                            }
+                            .catalog-card_video {
+                                width: 100%;
+                                min-height: 329px;
+                                margin-bottom: 20px;
+                                border: none;
+                                .video-block_pic {
+                                    margin: 0 auto;
+                                }
+                                .video-block_diskr {
+                                    width: 100%;
+                                    margin-top: 12px;
+                                    font-size: 15px;
+                                    font-weight: 500;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                    .feedback {
+                        margin-top: 53px;
+                        .feedback_title {
+                            width: 100%;
+                            font-size: 27px;
+                        }
+                        .feedback_text {
+                            width: 80%;
+                            margin: 0 auto;
+                            margin-top: 18px;
+                        }
+                        .feedback-cards_wrapper {
+                            margin-top: 19px;
+                            .feedback-card {
+                                width: 23%;
+                                min-height: 206px;
+                                margin-bottom: 30px;
+                                background: #c4c4c4;
+                                &:not(:last-child) {
+                                    margin-right: 0;
+                                }
+                                &:not(:nth-child(3n)) {
+                                    margin-right: 30px;
+                                }
+                                &:last-child {
+                                    margin-right: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: @mobile) and (max-width: @tablet) {
+    .quiz-after-main {
+        .container {
+            .quiz-catalog-wrapper {
+                margin-top: 0;
+                border-radius: none;
+                box-shadow: none;
+                .catalog {
+                    width: 100%;
+                    padding: 0 5px;
+                    padding-top:58px;
+                    .catalog_tilte {
+                        width: 100%;
+                        margin-left: 40px;
+                        margin-top: 0;
+                        .raleway_bold();
+                        font-size: 16px;
+                        text-align: left;
+                        &::before {
+                            position: absolute;
+                            top: -5px;
+                            left: -55px;
+                            content: url(../img/mobile/lock_open.png);
+                        }
+                    }
+                    .catalog_good {
+                        margin-top: 41px;
+                        flex-direction: column;
+                        .catalog_good-picture {
+                            order: 2;
+                            .catalog_good-pic {
+                                margin: 0 auto;
+                            }
+                        }
+                        .catalog_good-content {
+                            width: 100%;
+                            margin: 0;
+                            order: 1;
+                            .catalog_good-content-title {
+                                .raleway_bold();
+                                font-size: 18px;
+                                font-weight: 600;
+                            }
+                            .catalog_good-content-text {
+                                margin-top: 10px;
+                                font-size: 15px;
+                                &:last-child {
+                                    margin-bottom: 15px;
+                                }
+                            }
+                        }
+                    }
+                    .founder {
+                    width: 216px;
+                    margin-left: 15px;
+                    .founder_name {
+                        margin-top: 15px;
+                        font-size: 16px;
+                    }
+                    .founder_text {
+                        font-size: 16px;
+                        font-weight: 500;
+                        text-align: center;
+                    }
+                }
+                    .catalog_gift {
+                        margin-top: 56px;
+                        .gift-title {
+                            width: 100%;
+                            margin-top: 24px;
+                            font-size: 18px;
+                        }
+                        .gift_wrapper {
+                            margin-top: 17px;
+                            flex-direction: column;
+                            .gifts {
+                                width: 100%;
+                                margin: 0;
+                                flex-direction: column;
+                                .gifts_card {
+                                    max-width: 102px;
+                                    min-height: 109px;
+                                    margin-bottom: 0;
+                                    .gifts_card_descr {
+                                        margin-top: 10px;
+                                        font-size: 16px;
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                            .gift_form-container {
+                                width: 100%;
+                                margin: 0;
+                                margin-top: 41px;
+                                .gift_form-text {
+                                    width: 90%;
+                                    margin: 0 auto;
+                                    font-size: 13px;
+                                    text-align: center;
+                                }
+                                .gift_form {
+                                    margin-top: 12px;
+                                    .choice-block_label-tel {
+                                        .choice-block_input-tel {
+                                            width: 180px;
+                                            height: 35px;
+                                            padding: 8px 25px;
+                                            font-size: 15px;
+                                        }
+                                    }
+                                }
+                                .btn_gift_form {
+                                    width: 185px;
+                                    height: 41px;
+                                    margin-top: 15px;
+                                    margin-bottom: 30px;
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                    .catalog-cards_wrapper {
+                        width: 95%;
+                        margin-top: 56px;
+                        margin-left: 5px;
+                        .catalog-cards_title {
+                            width: 105%;
+                            font-size: 18px;
+                            margin: 0;
+                        }
+                        .catalog-cards {
+                            justify-content: center;
+                            margin: 0 auto;
+                            margin-top: 18px;
+                            .catalog-card {
+                                width: 100%;
+                                min-height: 378px;
+                                &:not(:nth-child(3n)) {
+                                    margin-right: 0;
+                                }
+                                &:not(:nth-child(odd)) {
+                                    margin: 0;
+                                }
+                                &:not(:last-child) {
+                                    margin-bottom: 20px;
+                                }
+                                .catalog-card-content {
+                                    padding: 14px 8px;
+                                    .catalog-card_title {
+                                        font-size: 20px;
+                                        font-weight: 600;
+                                    }
+                                    .price {
+                                        margin-top: 17px;
+                                        .base-price,
+                                        .our-price {
+                                            display: flex;
+                                            align-items: center;
+                                            .price_num {
+                                                margin-left: auto;
+                                                font-weight: 500;
+                                            }
+                                            .base_num {
+                                                margin-right: 15px;
+                                                position: relative;
+                                                color: @secondary_color;
+                                            }
+                                            .our_num {
+                                                margin-right: 0;
+                                                font-size: 23px;
+                                                color: @accent_color;
+                                            }
+                                        }
+                                        .our-price {
+                                            margin-top: 6px;
+                                        }
+
+                                    }
+                                    .catalog-card_link {
+                                        width: 143px;
+                                        height: 38px;
+                                        margin: 23px auto;
+                                    }
+                                }
+                            }
+                            .catalog-card_video {
+                                width: 100%;
+                                min-height: 170px;
+                                margin-bottom: 20px;
+                                border: none;
+                                .video-block_diskr {
+                                    width: 100%;
+                                    margin-top: 9px;
+                                    font-size: 9px;
+                                    font-weight: 500;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                    .feedback {
+                        margin-top: 55px;
+                        .feedback_title {
+                            width: 100%;
+                            font-size: 18px;
+                        }
+                        .feedback_text {
+                            width: 100%;
+                            margin: 0 auto;
+                            margin-top: 5px;
+                            font-size: 14px;
+                        }
+                        .feedback-cards_wrapper {
+                            margin-top: 19px;
+                            justify-content: flex-start;
+                            .feedback-card {
+                                width: 48%;
+                                min-height: 206px;
+                                margin-bottom: 10px;
+                                background: #c4c4c4;
+                                &:not(:last-child) {
+                                    margin-right: 0;
+                                }
+                                &:not(:nth-child(3n)) {
+                                    margin-right: 0;
+                                }
+                                &:last-child {
+                                    margin-right: 0;
+                                }
+                                &:not(:nth-child(even)) {
+                                    margin-right: 10px;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
