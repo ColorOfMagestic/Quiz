@@ -32,7 +32,9 @@
                     &:not(:nth-child(even)){
                         margin-right: 30px;
                     }
-
+                    &:last-child {
+                        margin-right: 0;
+                    }
                     .color-card_form {
                         width: 100%;
                         display: flex;
@@ -58,7 +60,7 @@
                             }
                             .color-card_check:checked + .check-style::before {
                                 position: absolute;
-                                content: url(../img/check.svg);
+                                content: url(../img/desktop/check.svg);
                                 top: 50%;
                                 left: 50%;
                                 transform: translate(-50%,-50%);
@@ -84,7 +86,7 @@
                     top: 20%;
                     left: 50%;
                     transform: translate(-50%,-50%);
-                    content: url(../img/color_cup_ps.png);
+                    content: url(../img/desktop/color_cup_ps.png);
                 }
                 }
             }
@@ -93,4 +95,296 @@
             margin-top: 75px;
         }
     }
+}
+
+@media (min-width: @laptop) and (max-width: @desktop) {
+    .quiz-main {
+        .question-4 {
+            .accent_question {
+                .accent_question_text_4 {
+                    width: 68%;
+                    font-family: 'Raleway',sans-serif;
+                    font-weight: 500;
+                    font-size: @title_desktop;
+                }
+                .accent_question_explanation_4 {
+                    margin-top: 4px;
+                    width: 75%;
+                    font-size: @accent_quest_size_desktop;
+                }
+            }
+            .choice {
+                .color-cards-container {
+                    width: 60%;
+                    margin-top: 36px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-left: auto;
+                    padding-left: 10px;
+                    .color-card {
+                        position: relative;
+                        width: 258px;
+                        height: 227px;
+                        margin-bottom: 30px;
+                        padding: 10px;
+                        border: 1px solid @accent_color;
+                        border-radius: 10px;
+                        &:not(:nth-child(even)){
+                            margin-right: 30px;
+                        }
+                        .color-card_form {
+                            width: 100%;
+                            display: flex;
+                            margin-top: 17px;
+                            .color-card_label {
+                                position: relative;
+                                display: flex;
+                                align-items: center;
+                                width: 100%;
+                                .color-card_check {
+                                    position: absolute;
+                                    width: 1px;
+                                    height: 1px;
+                                    overflow: hidden;
+                                    clip: rect(0 0 0 0);
+                                }
+                                .check-style {
+                                    position: absolute;
+                                    width: 20px;
+                                    height: 20px;
+                                    border: 1px solid @accent_color;
+                                    border-radius: 4px;
+                                }
+                                .color-card_check:checked + .check-style::before {
+                                    position: absolute;
+                                    content: url(../img/desktop/check.svg);
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%,-50%);
+                                }
+                                .color-card_text {
+                                    width: 100%;
+                                    padding-left: 28px;
+                                    font-size: 15px;
+                                }
+                                .color-card_text--modern {
+                                    .text--modern_span {
+                                        display: block;
+                                        font-size: 12px;
+                                        font-weight: 300;
+                                    }
+                                }
+                            }
+                        }
+
+
+                    }
+                    .color-card--other {
+                        &::before {
+                        position: absolute;
+                        top: 20%;
+                        left: 40%;
+                        transform: translate(-50%,-50%);
+                        content: url(../img/mobile/color_cap_ps.png);
+                    }
+                    }
+                }
+            }
+            .block-buttons {
+                margin-top: 75px;
+            }
+        }
     }
+}
+@media (min-width: @tablet) and (max-width: @laptop) {
+    .quiz-main {
+        .question-4 {
+            .accent_question {
+                .accent_question_text_4 {
+                    width: 68%;
+                    font-family: 'Raleway',sans-serif;
+                    font-weight: 500;
+                    font-size: 20px;
+                }
+                .accent_question_explanation_4 {
+                    width: 70%;
+                    margin-top: 4px;
+                    font-size: @accent_quest_size_desktop;
+                }
+            }
+            .choice {
+                .color-cards-container {
+                    width: 90%;
+                    margin: 0 auto;
+                    margin-top: 36px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    .color-card {
+                        position: relative;
+                        width: 258px;
+                        height: 227px;
+                        margin-bottom: 25px;
+                        padding: 10px;
+                        border: 1px solid @accent_color;
+                        border-radius: 10px;
+                        &:not(:nth-child(even)){
+                            margin-right: 25px;
+                        }
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                        .color-card_form {
+                            width: 100%;
+                            display: flex;
+                            margin-top: 17px;
+                            .color-card_label {
+                                position: relative;
+                                display: flex;
+                                align-items: center;
+                                width: 100%;
+                                .color-card_check {
+                                    position: absolute;
+                                    width: 1px;
+                                    height: 1px;
+                                    overflow: hidden;
+                                    clip: rect(0 0 0 0);
+                                }
+                                .check-style {
+                                    position: absolute;
+                                    width: 20px;
+                                    height: 20px;
+                                    border: 1px solid @accent_color;
+                                    border-radius: 4px;
+                                }
+                                .color-card_check:checked + .check-style::before {
+                                    position: absolute;
+                                    content: url(../img/desktop/check.svg);
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%,-50%);
+                                }
+                                .color-card_text {
+                                    width: 100%;
+                                    padding-left: 28px;
+                                    font-size: 15px;
+                                }
+                                .color-card_text--modern {
+                                    .text--modern_span {
+                                        display: block;
+                                        font-size: 12px;
+                                        font-weight: 300;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .color-card--other {
+                        &::before {
+                        position: absolute;
+                        top: 20%;
+                        left: 40%;
+                        transform: translate(-50%,-50%);
+                        content: url(../img/mobile/color_cap_ps.png);
+                    }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: @mobile) and (max-width: @tablet) {
+    .quiz-main {
+        .question-4 {
+            .accent_question {
+                .accent_question_text_4 {
+                    width: 100%;
+                    font-family: 'Raleway',sans-serif;
+                    font-weight: 500;
+                    font-size: 17px;
+                    text-align: center;
+                }
+                .accent_question_explanation_4 {
+                    width: 80%;
+                    margin: 0 auto;
+                    margin-top: 4px;
+                    font-size: 10px;
+                    text-align: center;
+                }
+            }
+            .choice {
+                .color-cards-container {
+                    width: 90%;
+                    margin: 0 auto;
+                    margin-top: 36px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    .color-card {
+                        width: 258px;
+                        height: 227px;
+                        margin-bottom: 20px;
+                        &:not(:nth-child(even)){
+                            margin-right: 0;
+                        }
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                        .color-card_form {
+                            width: 100%;
+                            display: flex;
+                            margin-top: 17px;
+                            .color-card_label {
+                                position: relative;
+                                display: flex;
+                                align-items: center;
+                                width: 100%;
+                                .color-card_check {
+                                    position: absolute;
+                                    width: 1px;
+                                    height: 1px;
+                                    overflow: hidden;
+                                    clip: rect(0 0 0 0);
+                                }
+                                .check-style {
+                                    position: absolute;
+                                    width: 20px;
+                                    height: 20px;
+                                    border: 1px solid @accent_color;
+                                    border-radius: 4px;
+                                }
+                                .color-card_check:checked + .check-style::before {
+                                    position: absolute;
+                                    content: url(../img/desktop/check.svg);
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%,-50%);
+                                }
+                                .color-card_text {
+                                    width: 100%;
+                                    padding-left: 28px;
+                                    font-size: 15px;
+                                }
+                                .color-card_text--modern {
+                                    .text--modern_span {
+                                        display: block;
+                                        font-size: 12px;
+                                        font-weight: 300;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .color-card--other {
+                        &::before {
+                        position: absolute;
+                        top: 20%;
+                        left: 40%;
+                        transform: translate(-50%,-50%);
+                        content: url(../img/mobile/color_cap_ps.png);
+                    }
+                    }
+                }
+            }
+        }
+    }
+
+}
