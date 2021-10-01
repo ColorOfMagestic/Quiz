@@ -132,11 +132,341 @@
                         position: absolute;
                         top: -60%;
                         left: 0;
-                        content: url(../img/lock.png);
+                        content: url(../img/desktop/lock.png);
                     }
 
                 }
             }
         }
     }
+}
+
+@media (min-width: @laptop) and (max-width: @desktop) {
+    .quiz-main {
+        .five {
+            position: relative;
+            .question_container {
+                    .choice {
+                        position: relative;
+                        margin-top: 70px;
+                        .choice_block-pic {
+                            .choice-pic {
+                                transform: translate(-20px,-65px);
+                            }
+                        }
+                        .form_choice-block {
+                            width: 35%;
+                            .form_choice-block-title {
+                                margin-top: 80px;
+                                font-size: 25px;
+                                .choice-block-title_span {
+                                    display: block;
+                                    color: #6A2A85;
+                                }
+                            }
+                            .form_choice-block_text {
+                                width: 80%;
+                                margin-top: 12px;
+                                font-size: 12px;
+                            }
+                            .choice-block_form {
+                                width: 100%;
+                                margin-top: 21px;
+                                .choice-block_label {
+                                    height: 24px;
+                                    &:not(:last-child) {
+                                        margin-bottom: 17px;
+                                    }
+                                    .choice-style {
+                                        width: 24px;
+                                        height: 24px;
+                                    }
+                                    .choice-block_input:checked + .choice-style::before {
+                                        width: 14px;
+                                        height: 14px;
+                                    }
+                                    .choice-block_text {
+                                        width: 60%;
+                                        padding-left:36px;
+                                        font-size: @checkbox_desktop;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .choice-block_info-form {
+                        .choice-block_label-tel {
+                            margin-top: 0;
+                            .choice-block_input-tel {
+                                width: 261px;
+                                height: 56px;
+                                padding: 18px 60px;
+                                font-size: 16px;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                    .choice-block_btn {
+                        display: block;
+                        width: 258px;
+                        height: 65px;
+                        margin-bottom: 60px;
+                        font-size: 18px;
+                    }
+                    .choice-block_info {
+                        width: 38%;
+                        margin: 0 auto;
+                        margin-top: 50px;
+                        font-size: 15px;
+                        font-weight: 500;
+                        text-align: center;
+                    }
+                }
+            .footer-five {
+                position: relative;
+                width: 100vw;
+                left: 50%;
+                transform: translate(-50%);
+                border-radius: 0;
+                background-color: #BFDDFD;
+                .footer-five-container {
+                    min-height: 127px;
+                    .footer-five-text {
+                        font-size: 24px;
+                        &::before {
+                            content: url(../img/laptop/lock.png);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: @tablet) and (max-width: @laptop) {
+    .quiz-main {
+        .five {
+            position: relative;
+            .question_container {
+                    .choice {
+                        position: relative;
+                        margin-top: 30px;
+                        .choice_block-pic {
+                            width: 100%;
+                            margin-top: 50px;
+                            order: 3;
+                            .choice-pic {
+                                margin: 0 auto;
+                                transform: translate(0,0);
+                            }
+                        }
+                        .form_choice-block {
+                            width: 50%;
+                            margin: 0 auto;
+                            padding-left: 18px;
+                            order: 1;
+                            .form_choice-block-title {
+                                margin-top: 0;
+                                font-size: 25px;
+                                .choice-block-title_span {
+                                    display: block;
+                                    color: #6A2A85;
+                                }
+                            }
+                            .form_choice-block_text {
+                                width: 80%;
+                                margin-top: 12px;
+                                font-size: 12px;
+                            }
+                            .choice-block_form {
+                                width: 100%;
+                                margin-top: 21px;
+                                margin-bottom: 31px;
+
+                                .choice-block_label {
+                                    height: 24px;
+                                    &:not(:last-child) {
+                                        margin-bottom: 17px;
+                                    }
+                                    .choice-style {
+                                        width: 24px;
+                                        height: 24px;
+                                    }
+                                    .choice-block_input:checked + .choice-style::before {
+                                        width: 14px;
+                                        height: 14px;
+                                    }
+                                    .choice-block_text {
+                                        width: 70%;
+                                        padding-left:36px;
+                                        font-size: @checkbox_desktop;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .choice-block_info-form {
+                        .choice-block_label-tel {
+                            margin-top: 37px;
+                            .choice-block_input-tel {
+                                width: 254px;
+                                height: 53px;
+                                padding: 15px 57px;
+                                font-size: 16px;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                    .choice-block_btn {
+                        display: block;
+                        width: 258px;
+                        height: 65px;
+                        margin-bottom: 23px;
+                        font-size: 18px;
+                    }
+                    .choice-block_info {
+                        width: 50%;
+                        margin: 0 auto;
+                        margin-top: 21px;
+                        font-size: 15px;
+                        font-weight: 500;
+                        text-align: center;
+                        .choice-block_info-span {
+                            display: block;
+                        }
+                    }
+                }
+            .footer-five {
+                position: relative;
+                width: 100vw;
+                left: 50%;
+                transform: translate(-50%);
+                border-radius: 0;
+                background-color: #BFDDFD;
+                .footer-five-container {
+                    min-height: 127px;
+                    .footer-five-text {
+                        font-size: 18px;
+                        padding-left: 40px;
+                        &::before {
+                            content: url(../img/tablet/lock.png);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: @mobile) and (max-width: @tablet) {
+    .quiz-main {
+        .five {
+            position: relative;
+            .question_container {
+                    .choice {
+                        position: relative;
+                        margin-top: 30px;
+                        .choice_block-pic {
+                            width: 100%;
+                            margin-top: 50px;
+                            order: 3;
+                            .choice-pic {
+                                margin: 0 auto;
+                                transform: translate(0,0);
+                            }
+                        }
+                        .form_choice-block {
+                            width: 100%;
+                            margin: 0 auto;
+                            order: 1;
+                            .form_choice-block-title {
+                                margin-top: 0;
+                                font-size: 18px;
+                                .choice-block-title_span {
+                                    display: block;
+                                    color: #6A2A85;
+                                }
+                            }
+                            .form_choice-block_text {
+                                width: 80%;
+                                margin-top: 12px;
+                                font-size: 12px;
+                            }
+                            .choice-block_form {
+                                width: 100%;
+                                margin-top: 21px;
+                                margin-bottom: 31px;
+                                .choice-block_label {
+                                    height: 20px;
+                                    &:not(:last-child) {
+                                        margin-bottom: 17px;
+                                    }
+                                    .choice-style {
+                                        width: 22px;
+                                        height: 22px;
+                                    }
+                                    .choice-block_input:checked + .choice-style::before {
+                                        width: 12px;
+                                        height: 12px;
+                                    }
+                                    .choice-block_text {
+                                        width: 70%;
+                                        padding-left:36px;
+                                        font-size: @checkbox_desktop;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .choice-block_info-form {
+                        .choice-block_label-tel {
+                            margin-top: 30px;
+                            .choice-block_input-tel {
+                                width: 217px;
+                                height: 46px;
+                                padding: 15px 37px;
+                                font-size: 16px;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                    .choice-block_btn {
+                        display: block;
+                        width: 216px;
+                        height: 54px;
+                        margin-bottom: 21px;
+                        font-size: 18px;
+                    }
+                    .choice-block_info {
+                        width: 80%;
+                        margin: 0 auto;
+                        margin-top: 21px;
+                        font-size: 15px;
+                        font-weight: 500;
+                        text-align: center;
+                        .choice-block_info-span {
+                            display: block;
+                        }
+                    }
+                }
+            .footer-five {
+                position: relative;
+                width: 100vw;
+                left: 50%;
+                transform: translate(-50%);
+                border-radius: 0;
+                background-color: #BFDDFD;
+                .footer-five-container {
+                    min-height: 127px;
+                    .footer-five-text {
+                        font-size: 10px;
+                        padding-left: 20px;
+                        &::before {
+                            content: url(../img/mobile/lock.png);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
