@@ -54,7 +54,7 @@
 @mobile:320px;
 
 // Auxiliary styles
-body{
+body{overflow-x: hidden;
     font-family: 'Roboto';
     color: @text_color;
     font-size: @main_size_desktop;
@@ -89,6 +89,22 @@ h1,h2,h3,h4 {
     &:active {
         transform: translate(2px,2px);
     }
+}
+
+.question {
+    position: absolute;
+    top: -1000px;
+    opacity: 0;
+    z-index: -10;
+    transition: opacity, 1.5s;
+}
+
+.question--active {
+    position: relative;
+    top: 0;
+    opacity: 1;
+    z-index: 10;
+
 }
 
 // Adaptive sizes
