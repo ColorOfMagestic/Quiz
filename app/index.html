@@ -88,7 +88,7 @@
 		<div class="container">
 			<div class="quiz-main_wrapper">
 				<!-- question-1 -->
-				<section class="question question-1">
+				<section data-num="1" class="question question-1 question--active">
 					<div class="question_container">
 						<h3 class="question_title">Подберите кровать, которая идеально подойдет вам,</h3>
 						<p class="question_title_text">ответив на 6 вопросов за 1 минуту</p>
@@ -109,18 +109,19 @@
 						<div class="choice">
 							<form class="choice_form" action="">
 								<label class="choice_label">
-									<input class="choice_input" type="radio" name="choice" checked>
+									<input class="choice_input" type="radio" name="choice" value="Главное низкая цена. Стандартная надежность меня более чем устраивает" checked>
 									<span class="radio-style"></span>
 									<p class="choice_text">Главное низкая цена. Стандартная надежность меня более чем устраивает</p>
 								</label>
 								<label class="choice_label">
-									<input class="choice_input" type="radio" name="choice">
+									<input class="choice_input" type="radio" name="choice" value="Ценю надежность, комфорт и дизайн,
+									даже если за это нужно немного доплатить">
 									<span class="radio-style"></span>
 									<p class="choice_text">Ценю надежность, комфорт и дизайн,
 										даже если за это нужно немного доплатить</p>
 								</label>
 								<label class="choice_label">
-									<input class="choice_input" type="radio" name="choice">
+									<input class="choice_input" type="radio" name="choice" value="Рассматриваю все ценовые сегменты">
 									<span class="radio-style"></span>
 									<p class="choice_text">Рассматриваю все ценовые сегменты</p>
 								</label>
@@ -162,7 +163,7 @@
 				</section>
 				<!-- //question-1 -->
 				<!-- question-2 -->
-				<section class="question question-2">
+				<section data-num="2" class="question question-2 ">
 					<div class="question_container">
 						<h3 class="question_title">Подберите кровать, которая идеально подойдет вам,</h3>
 						<p class="question_title_text">ответив на 6 вопросов за 1 минуту</p>
@@ -186,17 +187,17 @@
 						<div class="choice">
 							<form class="choice_form" action="">
 								<label class="choice_label">
-									<input class="choice_input" type="radio" name="choice_2" checked>
+									<input class="choice_input" type="radio" name="choice_2" value="Не ломалась, но сильно скрипела" checked>
 									<span class="radio-style"></span>
 									<p class="choice_text">Не ломалась, но сильно скрипела</p>
 								</label>
 								<label class="choice_label">
-									<input class="choice_input" type="radio" name="choice_2">
+									<input class="choice_input" type="radio" name="choice_2" value="Ломалась в самый не подходящий момент">
 									<span class="radio-style"></span>
 									<p class="choice_text">Ломалась в самый не подходящий момент</p>
 								</label>
 								<label class="choice_label">
-									<input class="choice_input" type="radio" name="choice_2">
+									<input class="choice_input" type="radio" name="choice_2" value="Не ломалась">
 									<span class="radio-style"></span>
 									<p class="choice_text">Не ломалась</p>
 								</label>
@@ -248,7 +249,7 @@
 				</section>
 				<!-- //question-2 -->
 				<!-- question-3 -->
-				<section class="question question-3">
+				<section data-num="3" class="question question-3">
 					<div class="question_container">
 						<h3 class="question_title">Подберите кровать, которая идеально подойдет вам,</h3>
 						<p class="question_title_text">ответив на 6 вопросов за 1 минуту</p>
@@ -307,7 +308,7 @@
 									</div>
 									<form class="slider-card_form" action="">
 										<label class="slider-card_label">
-											<input class="slider-card_check" type="checkbox" name="">
+											<input class="slider-card_check" type="checkbox" name="" value="Классический" checked>
 											<span class="check-style"></span>
 											<p class="slider-card_text">Классический</p>
 										</label>
@@ -352,7 +353,7 @@
 									</div>
 									<form class="slider-card_form" action="">
 										<label class="slider-card_label">
-											<input class="slider-card_check" type="checkbox" name="">
+											<input class="slider-card_check" type="checkbox" name="" value="Геометрия">
 											<span class="check-style"></span>
 											<p class="slider-card_text">Геометрия</p>
 										</label>
@@ -394,7 +395,7 @@
 									</div>
 									<form class="slider-card_form" action="">
 										<label class="slider-card_label">
-											<input class="slider-card_check" type="checkbox" name="">
+											<input class="slider-card_check" type="checkbox" name="" value="Модерн c утяжкой">
 											<span class="check-style"></span>
 											<p class="slider-card_text slider-card_text--modern">Модерн <span class="text--modern_span">С
 													утяжкой</span></p>
@@ -437,7 +438,7 @@
 									</div>
 									<form class="slider-card_form" action="">
 										<label class="slider-card_label">
-											<input class="slider-card_check" type="checkbox" name="">
+											<input class="slider-card_check" type="checkbox" name="" value="Модерн c утяжкой" value="Модерн c утяжкой V2">
 											<span class="check-style"></span>
 											<p class="slider-card_text slider-card_text--modern">Модерн <span class="text--modern_span">С
 													утяжкой</span></p>
@@ -482,7 +483,7 @@
 									</div>
 									<form class="slider-card_form" action="">
 										<label class="slider-card_label">
-											<input class="slider-card_check" type="checkbox" name="">
+											<input class="slider-card_check" type="checkbox" name="" value="Круглый">
 											<span class="check-style"></span>
 											<p class="slider-card_text">Круглый </p>
 										</label>
@@ -524,7 +525,7 @@
 									</div>
 									<form class="slider-card_form" action="">
 										<label class="slider-card_label">
-											<input class="slider-card_check" type="checkbox" name="">
+											<input class="slider-card_check" type="checkbox" name="" value="Свой проект(Изголовье)">
 											<span class="check-style"></span>
 											<p class="slider-card_text">Свой проект</p>
 										</label>
@@ -566,7 +567,7 @@
 				</section>
 				<!-- //question-3 -->
 				<!-- question-4 -->
-				<section class="question question-4">
+				<section data-num="4" class="question question-4">
 					<div class="question_container">
 						<h3 class="question_title">Подберите кровать, которая идеально подойдет вам,</h3>
 						<p class="question_title_text">ответив на 6 вопросов за 1 минуту</p>
@@ -598,7 +599,7 @@
 									</picture>
 									<form class="color-card_form" action="">
 										<label class="color-card_label">
-											<input class="color-card_check" type="checkbox" name="">
+											<input class="color-card_check" type="checkbox" name="" value="Пастельные цвета" checked>
 											<span class="check-style"></span>
 											<p class="color-card_text">Пастельные цвета</p>
 										</label>
@@ -613,7 +614,7 @@
 									</picture>
 									<form class="color-card_form" action="">
 										<label class="color-card_label">
-											<input class="color-card_check" type="checkbox" name="">
+											<input class="color-card_check" type="checkbox" name="" value="Преобладание белого, светлые оттенки">
 											<span class="check-style"></span>
 											<p class="color-card_text">Преобладание белого, светлые оттенки</p>
 										</label>
@@ -627,7 +628,7 @@
 									</picture>
 									<form class="color-card_form" action="">
 										<label class="color-card_label">
-											<input class="color-card_check" type="checkbox" name="">
+											<input class="color-card_check" type="checkbox" name="" value="Темные цвета">
 											<span class="check-style"></span>
 											<p class="color-card_text">Темные цвета</p>
 										</label>
@@ -641,7 +642,7 @@
 									</picture>
 									<form class="color-card_form" action="">
 										<label class="color-card_label">
-											<input class="color-card_check" type="checkbox" name="">
+											<input class="color-card_check" type="checkbox" name="" value="Темные цвета">
 											<span class="check-style"></span>
 											<p class="color-card_text">Яркие цвета</p>
 										</label>
@@ -658,7 +659,7 @@
 
 									<form class="color-card_form" action="">
 										<label class="color-card_label">
-											<input class="color-card_check" type="checkbox" name="">
+											<input class="color-card_check" type="checkbox" name="" value="Другое">
 											<span class="check-style"></span>
 											<p class="color-card_text">Другое</p>
 										</label>
@@ -700,7 +701,7 @@
 				</section>
 				<!-- //question-4 -->
 				<!-- five -->
-				<section class="question question-5 five">
+				<section data-num="5" class="question question-5 five">
 					<div class="question_container">
 						<h3 class="question_title">Подберите кровать, которая идеально подойдет вам,</h3>
 						<p class="question_title_text">ответив на 6 вопросов за 1 минуту</p>
@@ -725,17 +726,17 @@
 									для вас варианты кроватей?</p>
 								<form class="choice-block_form" action="">
 									<label class="choice-block_label">
-										<input class="choice-block_input" type="radio" name="choice-block" id="" checked>
+										<input class="choice-block_input" type="radio" name="choice-block" id="" value="WhatsApp" checked>
 										<span class="choice-style"></span>
 										<p class="choice-block_text">Пришлите в WhatsApp</p>
 									</label>
 									<label class="choice-block_label">
-										<input class="choice-block_input" type="radio" name="choice-block" id="">
+										<input class="choice-block_input" type="radio" name="choice-block" id="" value="Telegram">
 										<span class="choice-style"></span>
 										<p class="choice-block_text">Пришлите в Telegram</p>
 									</label>
 									<label class="choice-block_label">
-										<input class="choice-block_input" type="radio" name="choice-block" id="">
+										<input class="choice-block_input" type="radio" name="choice-block" id="" value="Перезвоните">
 										<span class="choice-style"></span>
 										<p class="choice-block_text">Перезвоните у меня остались
 											вопросы.</p>
